@@ -1,0 +1,84 @@
+# Patch by EMlyDinEsH (www.osxlatitude.com)
+
+#
+# Enables 4 keyboard backlight levels control to work using my kexts AsusNBFnKeys and Smart Touchpad
+# This patch meant for Kabylake notebooks and may work for others.
+#
+
+# Insert backlight auto off control sync field for Smart Touchpad and Asus Fn Keys driver
+into device label ATKD code_regex Name\s\(BOFF,\sZero\) remove_matched;
+into device label ATKD insert begin Name (BOFF, Zero) end;
+
+# Insert method SKBL for setting keyboard backlight level
+into method label SKBL parent_label ATKD remove_entry;
+into Device label ATKD insert begin
+Method (SKBL, 1, NotSerialized)\n
+            {\n
+                If (Or (LEqual (Arg0, 0xED), LEqual (Arg0, 0xFD)))\n
+                {\n
+                    If (And (LEqual (Arg0, 0xED), LEqual (BOFF, 0xEA)))\n
+                    {\n
+                        Store (Zero, Local0)\n
+                        Store (Arg0, BOFF)\n
+                    }\n
+                    Else\n
+                    {\n
+                        If (And (LEqual (Arg0, 0xFD), LEqual (BOFF, 0xFA)))\n
+                        {\n
+                            Store (Zero, Local0)\n
+                            Store (Arg0, BOFF)\n
+                        }\n
+                        Else\n
+                        {\n
+                            Return (BOFF)\n
+                        }\n
+                    }\n
+                }\n
+                Else\n
+                {\n
+                    If (Or (LEqual (Arg0, 0xEA), LEqual (Arg0, 0xFA)))\n
+                    {\n
+                        Store (Arg0, BOFF)\n
+                    }\n
+                    Else\n
+                    {\n
+			Store (And (Arg0, 0x7F), KBLV)\n
+                    }\n
+                }\n
+		Store (0x0900, Local0)\n
+         	Add (Local0, 0xF0, Local0)\n
+         	\_SB.PCI0.LPCB.EC0.WRAM (Local0, KBLV)\n
+        	Store (DerefOf (Index (PWKB, KBLV)), Local0)\n
+           	\_SB.PCI0.LPCB.EC0.ST9E (0x1F, 0xFF, Local0)\n
+                Return (Local0)\n
+            }\n
+end;
+
+# Remove existing 16 backlight levels list if exist
+into device label ATKD code_regex Name\s\(KBPW,\sBuffer\s\(0x10\)\s*\n\s*\{\s*\/\*\s0000\s\*\/\s*0x00,\s0x11,\s0x22,\s0x33,\s0x44,\s0x55,\s0x66,\s0x77,\s*\/\*\s0008\s\*\/\s*\s0x88,\s0x99,\s0xAA,\s0xBB,\s0xCC,\s0xDD,\s0xEE,\s0xFF\s*\}\) remove_matched;
+# Remove existing 4 backlight levels list if exist
+into device label ATKD code_regex Name\s\(PWKB,\sBuffer\s\(0x04\)\s*\n\s*\{\s*0x00,\s0x55,\s0xAA,\s0xFF\s*\}\) remove_matched;
+
+# Insert 4 backlight levels
+into Device label ATKD insert begin
+Name (PWKB, Buffer (0x04)\n
+            {\n
+               0x00, 0x55, 0xAA, 0xFF\n
+            })\n
+end;
+
+
+# Insert method GKBL for reading keyboard backlight level
+into method label GKBL parent_label ATKD remove_entry;
+into Device label ATKD insert begin
+Method (GKBL, 1, NotSerialized)\n
+            {\n
+               If (LEqual (Arg0, 0xFF))\n
+                {\n
+                    Return (BOFF)\n
+                }\n
+
+                Return (KBLV)\n
+            }\n
+end;
+

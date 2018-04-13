@@ -1,0 +1,62 @@
+# Lid sleep fix for newer Asus laptops
+# Also fixes Fn+F7
+# Credits: Qwerty12 and fvl
+
+into device label EC0 insert
+begin
+Method (ECCM, 4, Serialized)\n
+{\n
+    If (ECAV ())\n
+    {\n
+        Acquire (MUEC, 0xFFFF)\n
+            Store (Arg0, CDT1)\n
+            Store (Arg1, CDT2)\n
+            Store (Arg2, CDT3)\n
+            Store (Arg3, CMD1)\n
+            Store (0x7F, Local0)\n
+            While (LAnd (Local0, CMD1))\n
+            {\n
+                Sleep (One)\n
+                    Decrement (Local0)\n
+            }\n
+\n
+        If (LEqual (CMD1, Zero))\n
+        {\n
+            Store (CDT1, Local0)\n
+        }\n
+        Else\n
+        {\n
+            Store (Ones, Local0)\n
+        }\n
+\n
+        Release (MUEC)\n
+            Return (Local0)\n
+    }\n
+\n
+    Return (Ones)\n
+}\n
+\n
+Method (RPUN, 1, Serialized)\n
+{\n
+    Return (ECCM (0x87, Zero, Arg0, 0xB6))\n
+}\n
+\n
+Method (SPUN, 2, Serialized)\n
+{\n
+    If (Arg1)\n
+    {\n
+        ECCM (0x87, 0x20, Arg0, 0xB6)\n
+    }\n
+    Else\n
+    {\n
+        ECCM (0x87, 0x40, Arg0, 0xB6)\n
+    }\n
+}\n
+end;
+
+# Use newly defined methods to enable lid sleep
+into method label GLID code_regex RPIN replaceall_matched begin RPUN end;
+into method label _LID code_regex RPIN replaceall_matched begin RPUN end;
+# Enable Fn+F7 to turn on/off display
+into method label _Q10 code_regex RPIN replaceall_matched begin RPUN end;
+into method label _Q10 code_regex SPIN replaceall_matched begin SPUN end;

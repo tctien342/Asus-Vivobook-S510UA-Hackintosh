@@ -11,7 +11,7 @@ This build running on MacOs X 10.13.4
     5.Card Reader:    Realtek_CardReader(RTL8411B_RTS5226_RTS5227)
     6.Camera:         ASUS UVC HD
     7.Audio:          Conexant Audio CX8050
-    8.Touchpad:       ELAN1200
+    8.Touchpad:       ELAN1300
 
 # Know problems
     1.  HDMI Audio problem

@@ -12,6 +12,7 @@ This build running on MacOs X 10.13.4
     6.Camera:         ASUS UVC HD
     7.Audio:          Conexant Audio CX8050
     8.Touchpad:       ELAN1300
+    9.Bios Version:   301
 
 # Know problems
     1.  HDMI Audio problem

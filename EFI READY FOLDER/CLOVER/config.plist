@@ -1138,7 +1138,7 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>ProductName</key>
-		<string>MacBookPro14,3</string>
+		<string>MacBookPro14,1</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir14,2 until Clover has support for Skylake identifiers</string>
 		<key>Trust</key>

@@ -27,6 +27,9 @@ This build running on MacOs X 10.13.4
     5. Rename _DSM methods to XDSM
     6. All Asus FN patch in necessary folder
 
+# New VoodooI2C
+    -Git: [VoodooI2C ELAN1300](https://github.com/tctien342/VoodooI2C)
+
 # I2C PATCH
     1. Replace all scope _SB.PCI0.I2C1 with this:
     ```

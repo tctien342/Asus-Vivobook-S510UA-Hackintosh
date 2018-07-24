@@ -3,11 +3,15 @@ This build running on MacOs X 10.13.4
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
+# Detail
+    Version:    2
+    Date:       24/07/2018
+
 # System specification
     1.Name:           Asus Vivobook S510UA BQ414T
     2.CPU:            Intel Core i5-8250U
     3.Graphic:        Intel UHD620
-    4.Wifi:           Intel Dual Band Wireless-AC 8265 - with bluetooth
+    4.Wifi:           Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560
     5.Card Reader:    Realtek_CardReader(RTL8411B_RTS5226_RTS5227)
     6.Camera:         ASUS UVC HD
     7.Audio:          Conexant Audio CX8050
@@ -16,8 +20,6 @@ This build running on MacOs X 10.13.4
 
 # Know problems
     1.  HDMI Audio problem
-    2.  Wifi card problem - hackintosh not support Intel card yet
-    3.  Bluetooh card
 
 # Using DSDT Patch
     1. Asus N55SL/Vivobook for battery

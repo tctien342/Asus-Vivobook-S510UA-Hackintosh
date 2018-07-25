@@ -6,6 +6,7 @@ This build running on MacOs X 10.13.4
 # Detail
     Version:    2
     Date:       24/07/2018
+    Support:    BIOS 301 / BIOS 303
 
 # System specification
     1.Name:           Asus Vivobook S510UA BQ414T
@@ -16,18 +17,15 @@ This build running on MacOs X 10.13.4
     6.Camera:         ASUS UVC HD
     7.Audio:          Conexant Audio CX8050
     8.Touchpad:       ELAN1300
-    9.Bios Version:   301
+    9.Bios Version:   301/303
 
 # Know problems
     1.  HDMI Audio problem
 
 # Using DSDT Patch
     1. Asus N55SL/Vivobook for battery
-    2. Fix _WAK Arg0 v2
-    3. USB _PRW 0x6D Skylake (insant wake) for sleep fix
-    4. Shutdown fix v2
-    5. Rename _DSM methods to XDSM
-    6. All Asus FN patch in necessary folder
+    2. USB _PRW 0x6D Skylake (insant wake) for sleep fix
+    3. All Asus FN patch in necessary folder
 
 # New VoodooI2C
     -Git: [VoodooI2C ELAN1300](https://github.com/tctien342/VoodooI2C)

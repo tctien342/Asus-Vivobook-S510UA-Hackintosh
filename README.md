@@ -4,9 +4,10 @@ This build running on MacOs X 10.13.4
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
 # Detail
-    Version:    2
-    Date:       24/07/2018
+    Version:    3
+    Date:       31/07/2018
     Support:    BIOS 301 / BIOS 303
+    Changelogs: Update VoodooI2C from @hieplpvip
 
 # System specification
     1.Name:           Asus Vivobook S510UA BQ414T

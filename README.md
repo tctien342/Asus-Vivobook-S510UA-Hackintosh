@@ -1,15 +1,18 @@
 # Asus Vivobook S510UA
+
 This build running on MacOs X 10.13.4
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
 # Detail
+
     Version:    4
     Date:       2/08/2018
     Support:    All BIOS
     Changelogs: added hotpatch from @hieplpvip
 
 # System specification
+
     1.Name:           Asus Vivobook S510UA BQ414T
     2.CPU:            Intel Core i5-8250U
     3.Graphic:        Intel UHD620
@@ -21,18 +24,23 @@ This build running on MacOs X 10.13.4
     9.Bios Version:   301/303
 
 # Know problems
+
     1.  HDMI Audio problem
 
 # Using DSDT Patch
+
     1. Asus N55SL/Vivobook for battery
     2. USB _PRW 0x6D Skylake (insant wake) for sleep fix
     3. All Asus FN patch in necessary folder
 
 # New VoodooI2C
+
     -Git: [VoodooI2C ASUS @hieplpvip](https://github.com/hieplpvip/VoodooI2C)
 
 # I2C PATCH
+
     1. Replace all scope _SB.PCI0.I2C1 with this:
+
     ```
         Scope (_SB.PCI0.I2C1)
         {
@@ -156,6 +164,7 @@ This build running on MacOs X 10.13.4
     ```
 
     2. Add Window10 Patch:
+    
     ```
         # Windows 10 DSDT Patch for VoodooI2C
         # Allows I2C controllers and devices to be discovered by OS X.
@@ -163,7 +172,8 @@ This build running on MacOs X 10.13.4
         into_all method code_regex If\s+\([\\]?_OSI\s+\(\"Windows\s2015\"\)\) replace_matched begin If(LOr(_OSI("Darwin"),_OSI("Windows 2015"))) end;
     ```
 
-    3. Add GPIO Controller Enable
+    1. Add GPIO Controller Enable
+   
     ```
         # GPI0 Status patch
         # Ensures that OS X can enumerate the GPI0 controller

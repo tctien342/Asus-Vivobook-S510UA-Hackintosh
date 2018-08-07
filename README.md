@@ -41,7 +41,7 @@ This build running on MacOs X 10.13.4
 
     1. Replace all scope _SB.PCI0.I2C1 with this:
 
-    ```
+```
         Scope (_SB.PCI0.I2C1)
         {
             Device (ETPD)
@@ -161,20 +161,20 @@ This build running on MacOs X 10.13.4
                 }
             }
         }
-    ```
+```
 
     2. Add Window10 Patch:
     
-    ```
+```
         # Windows 10 DSDT Patch for VoodooI2C
         # Allows I2C controllers and devices to be discovered by OS X.
         # Based off patches written by RehabMan
         into_all method code_regex If\s+\([\\]?_OSI\s+\(\"Windows\s2015\"\)\) replace_matched begin If(LOr(_OSI("Darwin"),_OSI("Windows 2015"))) end;
-    ```
+```
 
     1. Add GPIO Controller Enable
-   
-    ```
+    
+```
         # GPI0 Status patch
         # Ensures that OS X can enumerate the GPI0 controller
         # Written and maintained by Alexandre Daoud
@@ -184,6 +184,6 @@ This build running on MacOs X 10.13.4
         Return (0x0F)
 
         end;
-    ```
+```
 
 

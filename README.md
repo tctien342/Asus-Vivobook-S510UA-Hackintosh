@@ -39,7 +39,7 @@ This build running on MacOs X 10.13.4
 
 # I2C PATCH
 
-    1. Replace all scope _SB.PCI0.I2C1 with this:
+1. Replace all scope _SB.PCI0.I2C1 with this:
 
 ```
         Scope (_SB.PCI0.I2C1)
@@ -163,7 +163,7 @@ This build running on MacOs X 10.13.4
         }
 ```
 
-    2. Add Window10 Patch:
+2. Add Window10 Patch:
     
 ```
         # Windows 10 DSDT Patch for VoodooI2C
@@ -172,7 +172,7 @@ This build running on MacOs X 10.13.4
         into_all method code_regex If\s+\([\\]?_OSI\s+\(\"Windows\s2015\"\)\) replace_matched begin If(LOr(_OSI("Darwin"),_OSI("Windows 2015"))) end;
 ```
 
-    1. Add GPIO Controller Enable
+3. Add GPIO Controller Enable
     
 ```
         # GPI0 Status patch

@@ -1,6 +1,6 @@
 # Asus Vivobook S510UA
 
-This build running on MacOs X 10.13.4
+This build running on MacOs X
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 

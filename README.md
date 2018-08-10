@@ -6,10 +6,17 @@ This build running on MacOs X 10.13.4
 
 # Detail
 
-    Version:    4
-    Date:       2/08/2018
+    Version:    5
+    Date:       10/08/2018
     Support:    All BIOS
-    Changelogs: added hotpatch from @hieplpvip
+    Changelogs:
+        - Fix AppleHDA bug with conxeant by patched Codec Commander
+        - Patched UsbInjectAll for correct USB port and set WifiCard and Camera to build-in
+        - Add AsusFN kext from hieplpvip ( Many thanks for him ), Fn+F9 to disable trackpad
+        - Using CPUFriend to fix CPU frequence (1300 down to 800) - Using Macbook14,1 config
+        - Delect some unnecessary config
+        - Update all .efi file
+    Status: Fully working for now
 
 # System specification
 
@@ -25,19 +32,14 @@ This build running on MacOs X 10.13.4
 
 # Know problems
 
-    1.  HDMI Audio problem
+    1.  None
 
-# Using DSDT Patch
-
-    1. Asus N55SL/Vivobook for battery
-    2. USB _PRW 0x6D Skylake (insant wake) for sleep fix
-    3. All Asus FN patch in necessary folder
 
 # New VoodooI2C
 
     -Git: [VoodooI2C ASUS @hieplpvip](https://github.com/hieplpvip/VoodooI2C)
 
-# I2C PATCH
+# MANUAL I2C PATCH IF NOT USING HOTPATCH
 
 1. Replace all scope _SB.PCI0.I2C1 with this:
 

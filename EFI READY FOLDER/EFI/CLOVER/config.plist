@@ -424,7 +424,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>-igfxdvmtbeta -igfxbeta kext-dev-mode=1</string>
+		<string>abm_firstpolldelay=8000 kext-dev-mode=1 -igfxdvmtbeta -igfxbeta</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -687,7 +687,7 @@
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AEFQUExFIFNTRAA=

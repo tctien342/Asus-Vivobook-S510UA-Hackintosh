@@ -91,42 +91,13 @@
 					<key>Check Interval</key>
 					<integer>3000</integer>
 					<key>Custom Commands</key>
-					<array>
-						<dict>
-							<key>Command</key>
-							<data>
-							AZcHJA==
-							</data>
-							<key>Comment</key>
-							<string>0x19 SET_PIN_WIDGET_CONTROL 0x24</string>
-							<key>On Init</key>
-							<true/>
-							<key>On Sleep</key>
-							<false/>
-							<key>On Wake</key>
-							<true/>
-						</dict>
-						<dict>
-							<key>Command</key>
-							<data>
-							AacHJA==
-							</data>
-							<key>Comment</key>
-							<string>0x1a SET_PIN_WIDGET_CONTROL 0x24</string>
-							<key>On Init</key>
-							<true/>
-							<key>On Sleep</key>
-							<false/>
-							<key>On Wake</key>
-							<true/>
-						</dict>
-					</array>
+					<array/>
 					<key>Perform Reset</key>
-					<false/>
+					<true/>
 					<key>Perform Reset on EAPD Fail</key>
 					<false/>
 					<key>Perform Reset on External Wake</key>
-					<false/>
+					<true/>
 					<key>Send Delay</key>
 					<integer>300</integer>
 					<key>Sleep Nodes</key>

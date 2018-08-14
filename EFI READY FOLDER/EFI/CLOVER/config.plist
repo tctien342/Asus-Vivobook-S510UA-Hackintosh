@@ -190,11 +190,11 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					R1BSVw==
+					R1BSVwI=
 					</data>
 					<key>Replace</key>
 					<data>
-					WFBSVw==
+					WFBSVwI=
 					</data>
 				</dict>
 				<dict>
@@ -232,11 +232,11 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					U01CUg==
+					U01CUgs=
 					</data>
 					<key>Replace</key>
 					<data>
-					WFNNUg==
+					WFNNUgs=
 					</data>
 				</dict>
 				<dict>
@@ -424,7 +424,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>abm_firstpolldelay=8000 kext-dev-mode=1 -igfxdvmtbeta -igfxbeta</string>
+		<string>-igfxbeta kext-dev-mode=1 -igfxdvmtbeta abm_firstpolldelay=8000</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>

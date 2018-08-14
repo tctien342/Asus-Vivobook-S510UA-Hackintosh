@@ -190,11 +190,11 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					R1BSVwI=
+					R1BSVw==
 					</data>
 					<key>Replace</key>
 					<data>
-					WFBSVwI=
+					WFBSVw==
 					</data>
 				</dict>
 				<dict>
@@ -232,11 +232,11 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					U01CUgs=
+					U01CUg==
 					</data>
 					<key>Replace</key>
 					<data>
-					WFNNUgs=
+					WFNNUg==
 					</data>
 				</dict>
 				<dict>
@@ -424,7 +424,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>-igfxbeta kext-dev-mode=1 -igfxdvmtbeta abm_firstpolldelay=8000</string>
+		<string>abm_firstpolldelay=8000 kext-dev-mode=1 -igfxdvmtbeta -igfxbeta</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -433,6 +433,15 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>5</integer>
+	</dict>
+	<key>CPU</key>
+	<dict>
+		<key>HWPEnable</key>
+		<true/>
+		<key>HWPValue</key>
+		<string>0x40002201</string>
+		<key>UseARTFrequency</key>
+		<true/>
 	</dict>
 	<key>Comment</key>
 	<string>This file is for 10.12.6+ with native KabyLake support</string>
@@ -488,6 +497,8 @@
 		</array>
 		<key>Audio</key>
 		<dict>
+			<key>AFGLowPowerState</key>
+			<false/>
 			<key>Inject</key>
 			<integer>3</integer>
 			<key>ResetHDA</key>
@@ -505,6 +516,8 @@
 			<key>AddClockID</key>
 			<true/>
 			<key>FixOwnership</key>
+			<true/>
+			<key>HighCurrent</key>
 			<true/>
 			<key>Inject</key>
 			<true/>

@@ -6,16 +6,13 @@ This build running on MacOs X
 
 # Detail
 
-    Version:    5
-    Date:       10/08/2018
+    Version:    6
+    Date:       15/08/2018
     Support:    All BIOS
     Changelogs:
-        - Fix AppleHDA bug with conxeant by patched Codec Commander
-        - Patched UsbInjectAll for correct USB port and set WifiCard and Camera to build-in
-        - Add AsusFN kext from hieplpvip ( Many thanks for him ), Fn+F9 to disable trackpad
-        - Using CPUFriend to fix CPU frequence (1300 down to 800) - Using Macbook14,1 config
-        - Delect some unnecessary config
-        - Update all .efi file
+        - Patch usb by using SSDT-USB -> UsbInjectAll back to default
+        - Enable CPU HWP with config 0x40002201 for web and coding -> daily usage
+        - Enable USB High Current for charge phone
     Status: Fully working for now
 
 # System specification

@@ -6,13 +6,13 @@ This build running on MacOs X
 
 # Detail
 
-    Version:    6
-    Date:       15/08/2018
+    Version:    7
+    Date:       30/10/2018
     Support:    All BIOS
     Changelogs:
-        - Patch usb by using SSDT-USB -> UsbInjectAll back to default
-        - Enable CPU HWP with config 0x40002201 for web and coding -> daily usage
-        - Enable USB High Current for charge phone
+        - Update to 10.14 version
+        - Update all kexts
+        - Hiberate support
     Status: Fully working for now
 
 # System specification
@@ -31,14 +31,13 @@ This build running on MacOs X
 
     1.  None
 
-
 # New VoodooI2C
 
     -Git: [VoodooI2C ASUS @hieplpvip](https://github.com/hieplpvip/VoodooI2C)
 
 # MANUAL I2C PATCH IF NOT USING HOTPATCH
 
-1. Replace all scope _SB.PCI0.I2C1 with this:
+1. Replace all scope \_SB.PCI0.I2C1 with this:
 
 ```
         Scope (_SB.PCI0.I2C1)
@@ -48,35 +47,35 @@ This build running on MacOs X
                 Name (_ADR, One)  // _ADR: Address
                 Name (ETPH, Package (0x16)
                 {
-                    "ELAN1200", 
-                    "ELAN1201", 
-                    "ELAN1203", 
-                    "ELAN1200", 
-                    "ELAN1201", 
-                    "ELAN1300", 
-                    "ELAN1301", 
-                    "ELAN1300", 
-                    "ELAN1301", 
-                    "ELAN1000", 
-                    "ELAN1200", 
-                    "ELAN1200", 
-                    "ELAN1200", 
-                    "ELAN1200", 
-                    "ELAN1200", 
-                    "ELAN1203", 
-                    "ELAN1203", 
-                    "ELAN1201", 
-                    "ELAN1300", 
-                    "ELAN1300", 
-                    "ELAN1200", 
+                    "ELAN1200",
+                    "ELAN1201",
+                    "ELAN1203",
+                    "ELAN1200",
+                    "ELAN1201",
+                    "ELAN1300",
+                    "ELAN1301",
+                    "ELAN1300",
+                    "ELAN1301",
+                    "ELAN1000",
+                    "ELAN1200",
+                    "ELAN1200",
+                    "ELAN1200",
+                    "ELAN1200",
+                    "ELAN1200",
+                    "ELAN1203",
+                    "ELAN1203",
+                    "ELAN1201",
+                    "ELAN1300",
+                    "ELAN1300",
+                    "ELAN1200",
                     "ELAN1300"
                 })
                 Name (FTPH, Package (0x05)
                 {
-                    "FTE1001", 
-                    "FTE1200", 
-                    "FTE1200", 
-                    "FTE1300", 
+                    "FTE1001",
+                    "FTE1200",
+                    "FTE1200",
+                    "FTE1300",
                     "FTE1300"
                 })
                 Name (SBFG, ResourceTemplate ()
@@ -116,14 +115,14 @@ This build running on MacOs X
                             {
                                 Return (Buffer (One)
                                 {
-                                    0x03                                           
+                                    0x03
                                 })
                             }
                             Else
                             {
                                 Return (Buffer (One)
                                 {
-                                    0x00                                           
+                                    0x00
                                 })
                             }
                         }
@@ -137,7 +136,7 @@ This build running on MacOs X
                     {
                         Return (Buffer (One)
                         {
-                            0x00                                           
+                            0x00
                         })
                     }
                 }
@@ -163,7 +162,7 @@ This build running on MacOs X
 ```
 
 2. Add Window10 Patch:
-    
+
 ```
         # Windows 10 DSDT Patch for VoodooI2C
         # Allows I2C controllers and devices to be discovered by OS X.
@@ -172,7 +171,7 @@ This build running on MacOs X
 ```
 
 3. Add GPIO Controller Enable
-    
+
 ```
         # GPI0 Status patch
         # Ensures that OS X can enumerate the GPI0 controller
@@ -184,5 +183,3 @@ This build running on MacOs X
 
         end;
 ```
-
-

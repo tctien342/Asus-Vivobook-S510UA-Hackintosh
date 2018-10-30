@@ -424,11 +424,11 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>-igfxbeta kext-dev-mode=1 -igfxdvmtbeta abm_firstpolldelay=8000</string>
+		<string> darkwake=0 kext-dev-mode=1 abm_firstpolldelay=8000</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
@@ -648,7 +648,7 @@
 				<key>Comment</key>
 				<string>AppleBacklightInjector.kext (credit RehabMan)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				RiV1VCUwNHgA
@@ -766,7 +766,7 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
+		<string>MacBookPro6,2</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir14,1 until Clover has support for Skylake identifiers</string>
 		<key>Trust</key>
@@ -776,6 +776,8 @@
 	<dict>
 		<key>InjectKexts</key>
 		<string>Detect</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>

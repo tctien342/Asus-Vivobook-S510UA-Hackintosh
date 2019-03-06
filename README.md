@@ -6,21 +6,22 @@ This build running on MacOs X
 
 # Detail
 
-    Version:    8
-    Date:       25/11/2018
+    Version:    9
+    Date:       06/03/2019
     Support:    All BIOS
     Changelogs:
-        - Update build to date
-        - Add disable DGPU SSDT
-        - Using 10.14.1 for now
-    Status: Fully working for now
+        - Fixed BIOS 309
+        - Optimize kext and hotpatch (Ported from ZENBOOK by hieplpvip)
+        - HDMI include sound, SDcard work
+        - Fixed slow input password by using SMBIOS 11,1
+    Status: Stable
 
 # System specification
 
     1.Name:           Asus Vivobook S510UA BQ414T
     2.CPU:            Intel Core i5-8250U
     3.Graphic:        Intel UHD620
-    4.Wifi:            Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 (AirDrop and Handoff Working perfectly)
+    4.Wifi:           Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 (AirDrop and Handoff Working perfectly)
     5.Card Reader:    Realtek_CardReader(RTL8411B_RTS5226_RTS5227)
     6.Camera:         ASUS UVC HD
     7.Audio:          Conexant Audio CX8050
@@ -31,6 +32,7 @@ This build running on MacOs X
 
     1. DGPU like 940MX
     2. Fingerprint
+    3. FN + media controller's key
 
 # Know problems
 

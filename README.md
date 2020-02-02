@@ -63,6 +63,6 @@
 # Wi-Fi Replacement
 
 1. Replace your existing Wi-Fi/ Bluetooth card with either a DW1560 (recommended because most wide-spread and best supported) or a FRU 04X6020 (or a different kind if you can find a better one)
-2. Follow the instructions in "[post macOS Installations/Bluetooth AFTER card replacement/Wi-Fi & Bluetooth ReadMe.md](post macOS Installations/Bluetooth AFTER card replacement/Wi-Fi & Bluetooth ReadMe.md)"
+2. Follow the instructions in "[post macOS Installations/Bluetooth AFTER card replacement/Wi-Fi & Bluetooth ReadMe.md](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/tree/master/post%20macOS%20Installations)"
 3. Rebuild kext cache and repair L/E permissions, e.g. with Kext Updater, Hackintool etc.
 4. Reboot and ENJOY even more :)

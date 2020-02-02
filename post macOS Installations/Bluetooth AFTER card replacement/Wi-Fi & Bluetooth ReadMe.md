@@ -1,4 +1,4 @@
-#_Wi-Fi & Bluetooth_
+# _Wi-Fi & Bluetooth_
 
 For working Wi-Fi, Bluetooth and continuity features, the following kexts need to be present. The instructions apply to both, DW1560 and FRU 04X6020. For the least memory footprint it is recommeneded to (rather than BrcmFirmwareData.kext) use **BrcmFirmwareRepo**.kext. It does ***not work*** from E/C/k/O (EFI/CLOVER/kexts/Other) but ***must*** be installed to L/E (/Library/Extensions). Accordingly, ***any other*** necessary kext(s) from the BrcmPatchRAM package ***must*** be installed to L/E, too, and ***removed from E/C/k/O***, for most reliable functionality!
 
@@ -26,7 +26,7 @@ For working Wi-Fi, Bluetooth and continuity features, the following kexts need t
 
 ________________
 
-###Excerpts from/ digest of https://github.com/acidanthera/BrcmPatchRAM
+### Excerpts from/ digest of https://github.com/acidanthera/BrcmPatchRAM
 
 #### System Requirements:
 

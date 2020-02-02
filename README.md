@@ -1,6 +1,6 @@
-# Asus Vivobook S15 F510UA series
+# Asus VivoBook S15 F510UA series
 
-**This build enables you to run macOS on your Vivobook as long as it matches below System specifications as close as possible - verified with macOS 10.13.6 - 10.15.3**
+**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS 10.13.6 - 10.15.3**
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
@@ -15,7 +15,7 @@
 
 # System specification
 
-    1.Model Name:		Asus Vivobook S510UA
+    1.Model Name:		Asus VivoBook S510UA
     2.CPU:			Intel Core i5-8250U
     3.Video Graphics:	Intel UHD 620
     4.Wi-Fi:		Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 or FRU 04X6020 (AirDrop and Handoff Working perfectly)

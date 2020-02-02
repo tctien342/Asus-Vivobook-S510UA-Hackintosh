@@ -8,21 +8,21 @@
 
     Version:    	10.0 RC2
     Date:       	Feb. 2, 2020
-    Status: 		Stable
+    Status: 	Stable
     Support:    	All BIOS (verfified 301-310)
-    Technology:		Clover with ACPI hotpatch by RehabMan, ported from Asus ZenBook by hieplpvip
+    Technology:	Clover with ACPI hotpatch by RehabMan, ported from Asus ZenBook by hieplpvip
     Changelog:   	see Changelog.rtf
 
 # System specification
 
     1.Model Name:		Asus Vivobook S510UA
-    2.CPU:				Intel Core i5-8250U
+    2.CPU:			Intel Core i5-8250U
     3.Video Graphics:	Intel UHD 620
-    4.Wi-Fi:			Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 or FRU 04X6020 (AirDrop and Handoff Working perfectly)
+    4.Wi-Fi:		Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 or FRU 04X6020 (AirDrop and Handoff Working perfectly)
     5.Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)
-    6.Camera:			ASUS UVC HD
-    7.Audio:			Conexant Audio CX8050
-    8.Touchpad:			ELAN 1300
+    6.Camera:		ASUS UVC HD
+    7.Audio:		Conexant Audio CX8050
+    8.Touchpad:		ELAN 1300
     9.BIOS Version:		x510UAR 310
 
 # Unsupported Hardware

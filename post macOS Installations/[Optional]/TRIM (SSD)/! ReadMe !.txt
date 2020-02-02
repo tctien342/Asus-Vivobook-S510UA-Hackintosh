@@ -1,0 +1,1 @@
+System or security updates tend to clear "sudo trimforce enable" as executed via force enable TRIM. Trim Enabler executes a Kernel Extension and a Privileged Helper Tool via a Launch Daemon so it persists better. It is therefore the preferred solution.

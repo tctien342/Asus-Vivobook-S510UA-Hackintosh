@@ -1,0 +1,1 @@
+Buying the App is optional - it allows to be used in trial mode forever. However it is really worth the $14, so please consider supporting the developer Marc Moini, OK :)?

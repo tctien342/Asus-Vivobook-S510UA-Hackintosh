@@ -1,0 +1,7 @@
+Please note that some SSD drives do not support TRIM. It is easy to find out if your SSD drive supports TRIM. Do the following:
+
+- Launch "About This Mac" under the Apple menu
+ -Click on "System Report"
+- After it loads, Click on "SATA/SATA Express"
+- Click on each of the drives till "Medium Type" in the list says "Solid State"
+- The line right below this will say "Yes" or "No" to "TRIM SUPPORT". If it says "NO" TRIM will NOT work on your SSD!

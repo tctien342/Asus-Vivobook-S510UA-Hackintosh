@@ -1,0 +1,5 @@
+latest version of AppleALC has feature to send command to codecs like CodecCommander﻿ , you can modify AppleALC info.plist to stop using CodecCommander
+
+InsanelyDeepak
+
+https://osxlatitude.com/forums/topic/11316-how-to-fix-static-noisedistortioncrackling-sound-and-combo-jack-on-laptops/

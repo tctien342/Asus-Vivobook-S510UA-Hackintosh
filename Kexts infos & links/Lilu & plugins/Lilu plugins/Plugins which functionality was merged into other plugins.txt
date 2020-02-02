@@ -1,0 +1,8 @@
+Plugins which functionality was merged into other plugins:
+Name 	Short description
+BrcmWLFixup 	Superseded by AirportBrcmFixup
+CoreDisplayFixup 	Superseded by WhateverGreen
+IntelGraphicsDVMTFixup 	Superseded by WhateverGreen
+IntelGraphicsFixup 	Superseded by WhateverGreen
+NvidiaGraphicsFixup 	Superseded by WhateverGreen
+Shiki 	Superseded by WhateverGreen

@@ -1,0 +1,3 @@
+the driver has been around for 1,5 years, buried in a closed issue.. Download stevezhengshiqi's v.2.0.3 compile from here, apply, reboot, and hopefully enjoy. It works for me in Mojave and Catalina. His 2.1 and 2.1.1 compiles don't, but they are meaningless for our purpose anyway because v.2.0.3 was the latest with independent 2-button support anyway.
+
+It misses some gestures but is simply more solid & reliable. I still consider VoodooI2C 2.1+ beta until integration of VoodooInput incl. engine.

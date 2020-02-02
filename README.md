@@ -1,63 +1,68 @@
-# Asus Vivobook S510UA
+# Asus Vivobook S15 F510UA series
 
-This build running on MacOs X
+**This build enables you to run macOS on your Vivobook as long as it matches below System specifications as close as possible - verified with macOS 10.13.6 - 10.15.3**
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
-# Detail
+# Details
 
-    Version:    9
-    Date:       06/03/2019
-    Support:    All BIOS
-    Changelogs:
-        - Fixed BIOS 309
-        - Optimize kext and hotpatch (Ported from ZENBOOK by hieplpvip)
-        - HDMI include sound, SDcard work
-        - Fixed slow input password by using SMBIOS 11,1
-    Status: Stable
+    Version:    	10.0 RC2
+    Date:       	Feb. 2, 2020
+    Status: 		Stable
+    Support:    	All BIOS (verfified 301-310)
+    Technology:		Clover with ACPI hotpatch by RehabMan, ported from Asus ZenBook by hieplpvip
+    Changelog:   	see Changelog.rtf
 
 # System specification
 
-    1.Name:           Asus Vivobook S510UA BQ414T
-    2.CPU:            Intel Core i5-8250U
-    3.Graphic:        Intel UHD620
-    4.Wifi:           Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 (AirDrop and Handoff Working perfectly)
-    5.Card Reader:    Realtek_CardReader(RTL8411B_RTS5226_RTS5227)
-    6.Camera:         ASUS UVC HD
-    7.Audio:          Conexant Audio CX8050
-    8.Touchpad:       ELAN1300
-    9.Bios Version:   301/303
+    1.Model Name:		Asus Vivobook S510UA
+    2.CPU:				Intel Core i5-8250U
+    3.Video Graphics:	Intel UHD 620
+    4.Wi-Fi:			Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 or FRU 04X6020 (AirDrop and Handoff Working perfectly)
+    5.Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)
+    6.Camera:			ASUS UVC HD
+    7.Audio:			Conexant Audio CX8050
+    8.Touchpad:			ELAN 1300
+    9.BIOS Version:		x510UAR 310
 
-# Thing will not able to use
+# Unsupported Hardware
 
     1. DGPU like 940MX
-    2. Fingerprint
-    3. FN + media controller's key
+    2. Fingerprint reader
+    3. 'FN + media controller' key combo
+    4. Intel  Wi-Fi - replacement see below
 
-# Know problems
+# Known Issues
 
-    1.  None
+1. The Touchpad is not perfect (occasional hangs and possibly erratic movements) because a) it's a weak piece of hardware to begin with (even under Windows), and b) the VoodooI2C driver for macOS is still work in progress. For more info see [Touchpad Info](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
+2. Apple Safe Sleep ("Hibernate") does not work and is disabled
 
-# New VoodooI2C
+# Tools to use
+* Your favorite hackintosh USB installer maker (e.g. [UniBeast](https://www.unibeast.com/))
+* [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+* Hackintool ([Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direct download always latest version](http://headsoft.com.au/download/mac/Hackintool.zip))
+* Kext Updater ([Download](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German})
 
-    -Git: [VoodooI2C ASUS @hieplpvip](https://github.com/hieplpvip/VoodooI2C)
 
-# Step to install
+# Steps to install macOS
 
-    1. Prepair an Mac installer in USB with Clover added ( Use unibeast to create it )
-    2. Replace EFI folder in USB EFI partition with this INCLUDED EFI FOLDER (EFI BQ414T and EFI OTHER)
-    3. Boot into USB and select MacOs installer
-    4. First boot Trackpad will not work, need and mouse connect through USB, Follow mac install instruction you can find it on tonymacx86 or other hackintosh forum
-    5. After install success, boot into MacOS, Copy Kext In EFI OTHER or EFI BQ414T -> L/E to /Library/Extension
-    6. Use Kext Utility to rebuild kext then reboot
-    7. This time trackpad and audio will working normally, then you need to use Clover EFI bootloader to install clover to EFI partition
-    8. After install success, using Clover Configurator to mount your USB EFI partition then copy it to your System EFI.
-    9. After System EFI replaced by your EFI, Using Clover Configurator to change SMBIOS, generate your serial and MBL, then you can use icloud now
-    10. Enjoy
+    1. Prepair a macOS installer on a USB flash drive with Clover added (use e.g. Unibeast to create it)
+    2. Replace the EFI folder in the USB EFI partition with this INCLUDED EFI FOLDER
+    3. Boot into USB and select macOS installer
+    4. On first boot Trackpad will not work - you do need a mouse connected via USB.
+    5. Follow macOS install instructions (you can find them in you favorite hackintosh forum) to boot into macOS.
 
-# WIFI Replacement
+# Steps after installing macOS
+    
+1. Open the folder "**post macOS Installations**" and install all from within its subfolders for Audio Input, additional function keys, etc. Also study and consider the content of the folder [Optional].
+2. Recommended: install all kexts from EFI/CLOVER/kexts/Other to L/E (/Library/Extensions) with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
+3. Now trackpad and audio should work. Next you need to fill the EFI partition on your internal hard disk with the Clover EFI folder. You cam use Clover Configurator to mount your System EFI. Next back up the existing System EFI folder and copy this release's EFI folder to your system EFI partition
+4. Run Clover Configurator, click onto SMBIOS in the side bar on the left. Under 'Systen', next to 'Serial Number', click onto the 'Generate New' button. That will change both, system and board serial number, which should hopefully enable you to use iCloud
+5. Reboot and ENJOY :)
 
-    1. Replace your card wifi with DW1560 (Or other if you can find better one)
-    2. Copy two kext on DW1560 -> Clover to System EFI -> Clover -> Kext -> Other
-    3. Copy DW1560 -> L/E kexts to /Library/Extension folder then rebuild kext with Kext Utility
-    4. Reboot and enjoy
+# Wi-Fi Replacement
+
+1. Replace your existing Wi-Fi/ Bluetooth card with either a DW1560 (recommended because most wide-spread and best supported) or a FRU 04X6020 (or a different kind if you can find a better one)
+2. Follow the instructions in "[post macOS Installations/Bluetooth AFTER card replacement/Wi-Fi & Bluetooth ReadMe.md](post macOS Installations/Bluetooth AFTER card replacement/Wi-Fi & Bluetooth ReadMe.md)"
+3. Rebuild kext cache and repair L/E permissions, e.g. with Kext Updater, Hackintool etc.
+4. Reboot and ENJOY even more :)

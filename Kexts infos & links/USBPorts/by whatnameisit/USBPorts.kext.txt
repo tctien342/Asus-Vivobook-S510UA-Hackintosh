@@ -1,0 +1,16 @@
+Thanks to @whatnameisit for sharing his finding ¹: "For working BT after sleep, create codeless kext with BT USB port set as internal: I found the solution to this problem from experience as well as somewhere on github."
+
+Procedure:
+- remove SSDT-UIAC-ALL.aml from EFI/CLOVER/ACPI/patched
+- remove USBInjectAll.kext from EFI/CLOVER/kexts/Other and/or /L/E
+- download attached USBPorts.kext ² (kindly supplied by whatnameisit) and apply it to EFI/CLOVER/kexts/Other and/or /L/E
+
+reboot
+
+whatnameisit Jan. 6, 2020: "This USBPorts.kext correctly matches against Models MBP11,1 14,1 15,2 and 15,4" ³
+
+_____________________________________
+
+¹ https://www.tonymacx86.com/goto/post?id=1987499
+² https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/files/4026062/USBPorts.kext.zip
+³ https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/46#issuecomment-571138179

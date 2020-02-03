@@ -35,7 +35,7 @@
 # Known Issues
 
 1. The **Touchpad** is not perfect (occasional hangs and possibly erratic movements) because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. With VoodooI2C v.2.0.3 (used for now for stability and reliability), certain minor functions don't work: Fn+F9 (Touchpad off/on) and some touchpad gestures like pinch zoom. For more info see [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
-2. Apple Safe Sleep ("Hibernate") does not work and is disabled
+2. Apple Safe Sleep ("**Hibernate**") does not work and is disabled
 
 # Tools to use
 * Your favorite hackintosh USB installer maker (e.g. [UniBeast](https://www.unibeast.com/))
@@ -55,14 +55,14 @@
 # Steps after installing macOS
     
 1. Open the folder "**post macOS Installations**" and install all from within its subfolders for Audio Input, additional function keys, etc. Also study and consider the content of the folder [Optional].
-2. Recommended: install all kexts from EFI/CLOVER/kexts/Other (and any kext from the subfolder matching your macOS version) to L/E (/Library/Extensions) with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
-3. Now trackpad and audio input should work. Next you need to fill the EFI partition on your internal hard disk with the Clover EFI folder. You cam use Clover Configurator to mount your System EFI. Next back up the existing System EFI folder and copy this release's EFI folder to your system EFI partition
-4. Run Clover Configurator, click onto SMBIOS in the side bar on the left. Under 'Systen', next to 'Serial Number', click onto the 'Generate New' button. That will change both, system and board serial number, which should hopefully enable you to use iCloud
-5. Reboot and ENJOY :)
+2. Recommended: **install all kexts** from EFI/CLOVER/kexts/Other (and any kext from the subfolder matching your macOS version) **to L/E (/Library/Extensions)** with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
+3. Now trackpad and audio input should work. Next you need to **fill the EFI partition on your internal hard disk with the Clover EFI folder**. You cam use Clover Configurator to mount your System EFI. Next back up the existing System EFI folder and copy this release's EFI folder to your system EFI partition
+4. Run Clover Configurator, click onto **SMBIOS** in the side bar on the left. Under 'Systen', next to 'Serial Number', click onto the 'Generate New' button. That will change both, system and board serial number, which should hopefully enable you to use iCloud
+5. **Reboot and ENJOY :)**
 
 # Wi-Fi Replacement
 
-1. Replace your existing Wi-Fi/ Bluetooth card with either a DW1560 (recommended because most wide-spread and best supported) or a FRU 04X6020 (or a different kind if you can find a better one)
+1. Replace your existing Wi-Fi/ Bluetooth card with either a **DW1560** (recommended because most wide-spread and best supported) or a FRU 04X6020 (or a different kind if you can find a better one)
 2. Follow the instructions in "[post macOS Installations/Bluetooth AFTER card replacement/Wi-Fi & Bluetooth ReadMe.md](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/blob/master/post%20macOS%20Installations/Bluetooth%20AFTER%20card%20replacement/Wi-Fi%20%26%20Bluetooth%20ReadMe.md)"
 3. Rebuild kext cache and repair L/E permissions, e.g. with Kext Updater, Hackintool etc.
-4. Reboot and ENJOY even more :)
+4. Reboot and **ENJOY even more** :)

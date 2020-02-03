@@ -56,7 +56,7 @@
 # Steps after installing macOS
     
 1. Open the folder "**post macOS Installations**" and install all from within its subfolders for Audio Input, additional function keys, etc. Also study and consider the content of the folder [Optional].
-2. Recommended: install all kexts from EFI/CLOVER/kexts/Other (and any kext from its respective subfolders) to L/E (/Library/Extensions) with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
+2. Recommended: install all kexts from EFI/CLOVER/kexts/Other (and any kext from the subfolder matching your macOS version) to L/E (/Library/Extensions) with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
 3. Now trackpad and audio input should work. Next you need to fill the EFI partition on your internal hard disk with the Clover EFI folder. You cam use Clover Configurator to mount your System EFI. Next back up the existing System EFI folder and copy this release's EFI folder to your system EFI partition
 4. Run Clover Configurator, click onto SMBIOS in the side bar on the left. Under 'Systen', next to 'Serial Number', click onto the 'Generate New' button. That will change both, system and board serial number, which should hopefully enable you to use iCloud
 5. Reboot and ENJOY :)

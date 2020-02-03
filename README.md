@@ -66,3 +66,6 @@
 2. Follow the instructions in "[post macOS Installations/Bluetooth AFTER card replacement/Wi-Fi & Bluetooth ReadMe.md](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/blob/master/post%20macOS%20Installations/Bluetooth%20AFTER%20card%20replacement/Wi-Fi%20%26%20Bluetooth%20ReadMe.md)"
 3. Rebuild kext cache and repair L/E permissions, e.g. with Kext Updater, Hackintool etc.
 4. Reboot and **ENJOY even more** :)
+
+### Special Credits for this repo to these hackintoshers:
+**tctien342** (originator), **LeeBinder** (current maintainer), **whatnameisit** (main facilitator), **hieplpvip** (contributor), **fewtarius** (facilitator), any many MANY more..

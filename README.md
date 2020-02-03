@@ -35,7 +35,8 @@
 # Known Issues
 
 1. The Touchpad is not perfect (occasional hangs and possibly erratic movements) because a) it's a weak piece of hardware to begin with (even under Windows), and b) the VoodooI2C driver for macOS is still work in progress. For more info see [Touchpad Info](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
-2. Apple Safe Sleep ("Hibernate") does not work and is disabled
+2. With VoodooI2C v.2.0.3 (used for now for stability and reliability), certain minor functions don't work: Fn+F9 (Touchpad off/on), some touchpad gestures like pinch zoom
+3. Apple Safe Sleep ("Hibernate") does not work and is disabled
 
 # Tools to use
 * Your favorite hackintosh USB installer maker (e.g. [UniBeast](https://www.unibeast.com/))
@@ -55,8 +56,8 @@
 # Steps after installing macOS
     
 1. Open the folder "**post macOS Installations**" and install all from within its subfolders for Audio Input, additional function keys, etc. Also study and consider the content of the folder [Optional].
-2. Recommended: install all kexts from EFI/CLOVER/kexts/Other to L/E (/Library/Extensions) with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
-3. Now trackpad and audio should work. Next you need to fill the EFI partition on your internal hard disk with the Clover EFI folder. You cam use Clover Configurator to mount your System EFI. Next back up the existing System EFI folder and copy this release's EFI folder to your system EFI partition
+2. Recommended: install all kexts from EFI/CLOVER/kexts/Other (and any kext from its respective subfolders) to L/E (/Library/Extensions) with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
+3. Now trackpad and audio input should work. Next you need to fill the EFI partition on your internal hard disk with the Clover EFI folder. You cam use Clover Configurator to mount your System EFI. Next back up the existing System EFI folder and copy this release's EFI folder to your system EFI partition
 4. Run Clover Configurator, click onto SMBIOS in the side bar on the left. Under 'Systen', next to 'Serial Number', click onto the 'Generate New' button. That will change both, system and board serial number, which should hopefully enable you to use iCloud
 5. Reboot and ENJOY :)
 

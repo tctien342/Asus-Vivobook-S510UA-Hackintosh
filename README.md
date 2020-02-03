@@ -34,7 +34,7 @@
 
 # Known Issues
 
-1. The **Touchpad** is not perfect (occasional hangs and possibly erratic movements) because a) it's a weak piece of hardware to begin with (even under Windows), and b) the VoodooI2C driver for macOS is still work in progress. With VoodooI2C v.2.0.3 (used for now for stability and reliability), certain minor functions don't work: Fn+F9 (Touchpad off/on) and some touchpad gestures like pinch zoom. For more info see [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
+1. The **Touchpad** is not perfect (occasional hangs and possibly erratic movements) because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. With VoodooI2C v.2.0.3 (used for now for stability and reliability), certain minor functions don't work: Fn+F9 (Touchpad off/on) and some touchpad gestures like pinch zoom. For more info see [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
 2. Apple Safe Sleep ("Hibernate") does not work and is disabled
 
 # Tools to use

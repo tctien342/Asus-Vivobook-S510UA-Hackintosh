@@ -25,6 +25,8 @@
     8.Touchpad:		ELAN 1300
     9.BIOS Version:		x510UAR 310
 
+Users with VivoBooks with the **ELAN 1200** Touchpad are advised to rather use [whatnameisit's X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Catalina-10.15.3-Hackintosh)!
+
 # Unsupported Hardware
 
     1. DGPU like 940MX
@@ -34,8 +36,8 @@
 
 # Known Issues
 
-1. The **Touchpad** is not perfect (occasional hangs and possibly erratic movements) because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. With VoodooI2C v.2.0.3 (used for now for stability and reliability), certain minor functions don't work: Fn+F9 (Touchpad off/on) and some touchpad gestures like pinch zoom. For more info see [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
-2. Apple Safe Sleep ("**Hibernate**") does not work and is disabled
+1. The **Touchpad** is not perfect - you *might* encounter occasional hangs and possibly erratic movements because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. With VoodooI2C v.2.0.3 (used for now for stability and reliability), certain minor functions don't work: Fn+F9 (Touchpad off/on) and some touchpad gestures like pinch zoom. For more info see [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
+2. Apple Safe Sleep ("**Hibernate**") doesn't work and has been disabled
 
 # Tools to use
 * Your favorite hackintosh USB installer maker (e.g. [UniBeast](https://www.unibeast.com/))
@@ -60,6 +62,9 @@
 4. Run Clover Configurator, click onto **SMBIOS** in the side bar on the left. Under 'Systen', next to 'Serial Number', click onto the 'Generate New' button. That will change both, system and board serial number, which should hopefully enable you to use iCloud
 5. **Reboot and ENJOY :)**
 
+# _ATTENTION - be careful with Updates_!
+**Be especially mindful with VirtualSMC Updates!** If the versions of VirtualSMC, accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) and corresponding **efi driver** (EFI/CLOVER/drivers/UEFI/**VirtualSmc.efi**) do not match, touchpad and battery issues may arise! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
+
 # Wi-Fi Replacement
 
 1. Replace your existing Wi-Fi/ Bluetooth card with either a **DW1560** (recommended because most wide-spread and best supported) or a FRU 04X6020 (or a different kind if you can find a better one)
@@ -68,4 +73,4 @@
 4. Reboot and **ENJOY even more** :)
 
 ### Special Credits for this repo to these hackintoshers:
-**tctien342** (originator), **LeeBinder** (current maintainer), **whatnameisit** (main facilitator), **hieplpvip** (contributor), **fewtarius** (facilitator), any many MANY more..
+**tctien342** (originator), **LeeBinder** (current repo maintainer), **whatnameisit** (main contributor), **hieplpvip** (contributor), **fewtarius** (facilitator), any to many *MANY* others..

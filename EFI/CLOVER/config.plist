@@ -441,7 +441,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>disable I2C0 (by whatnameisit)</string>
+					<string>ELAN: disable I2C0 (by whatnameisit)</string>
 					<key>Disabled</key>
 					<true/>
 					<key>Find</key>
@@ -453,7 +453,7 @@
 					<key>Comment</key>
 					<string>ELAN: change Method(_STA,0,NS) in GPI0 to XSTA</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1NUQQCgCZNTQlJH</data>
 					<key>Replace</key>
@@ -592,10 +592,10 @@
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
-		<string>VBoxHfs</string>
-		<string>ApfsDriverLoader-64</string>
 		<string>AptioMemoryFix-64</string>
+		<string>ApfsDriverLoader-64</string>
 		<string>SMCHelper-64</string>
+		<string>VBoxHfs</string>
 	</array>
 	<key>GUI</key>
 	<dict>

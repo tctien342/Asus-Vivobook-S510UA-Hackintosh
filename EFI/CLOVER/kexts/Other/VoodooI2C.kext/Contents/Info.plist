@@ -21,7 +21,7 @@
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
-	</array>
+</array>
 	<key>CFBundleVersion</key>
 	<string>2.0.3</string>
 	<key>DTCompiler</key>
@@ -63,7 +63,7 @@
 				<string>INT33C3</string>
 				<string>INT3432</string>
 				<string>INT3433</string>
-			</array>
+</array>
 			<key>IOProbeScore</key>
 			<integer>9999</integer>
 			<key>IOProviderClass</key>
@@ -88,12 +88,11 @@
 			<string>VoodooI2CPCIController</string>
 			<key>IONameMatch</key>
 			<array>
-				<string>pci8086,9d60</string>
 				<string>pci8086,9d61</string>
 				<string>pci8086,a160</string>
 				<string>pci8086,a161</string>
 				<string>pci8086,a162</string>
-			</array>
+</array>
 			<key>IOProbeScore</key>
 			<integer>9999</integer>
 			<key>IOProviderClass</key>

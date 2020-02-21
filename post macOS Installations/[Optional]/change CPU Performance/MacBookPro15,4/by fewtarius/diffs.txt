@@ -1,0 +1,21 @@
+MacBookPro15,4 CPUFriendDataProvider
+
+from fewtarius:
+
+1. Better Battery Life:	09 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 44
+
+2. Balanced:				09 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 43
+
+3. Performance:			09 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 42
+
+
+via stevezhengshiqi's one-key-cpufriend:
+
+(1) Max Power Saving:			77 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 44
+
+(2) Balance Power (Default):	77 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 43
+
+(3) Balance performance:		77 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 42
+
+(4) Performance:						77 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41
+

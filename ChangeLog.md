@@ -17,6 +17,6 @@ It contains (among others) the following changes:
 
 ### Optional:
 
-- [[SOLVED] Vivobook doesn't go to sleep properly on low battery but rather crashes](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/39)
+- [[SOLVED] VivoBook doesn't go to sleep properly on low battery but rather crashes](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/39)
 
 

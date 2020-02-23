@@ -6,7 +6,7 @@
 
 # Details
 
-    Version:    	10.0 RC4
+    Version:    	10.0
     Date:       	Feb. 23, 2020
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
@@ -60,7 +60,9 @@ Users with VivoBooks with the **ELAN 1200** Touchpad are advised to rather use [
 
 # Steps after installing macOS
     
-1. Open the folder "**post macOS Installations**" and install *all* from within its subfolders for Audio Input, Hibernate prevention, additional function keys, etc. Also (strongly recommended!) study and consider the content of the folder [Optional].
+1. **Download this repo**, preferably as .dmg package from the [Releases](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) section because a) each release was tested thoroughly and can be considered a stable mile stone for most users, and b) macOS native icons and labels are maintained.<br/>  Alternatively you can download the repo at it's current "0-day" state if you see that's more recent than the latest release date and contains one or more updates you are looking for via the green "Clone or Download" button on the top right of the [repo's main page](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh), "Download ZIP". Consider the non-release state as BETA, and be aware that GitHub does ***not*** (yet?) sustain macOS native icons and labels in its open repo!
+
+2. Open the folder "**post macOS Installations**" and install *all* from within its subfolders for Audio Input, Hibernate prevention, additional function keys, etc. Also (strongly recommended!) study and consider the content of the folder [Optional].
 2. Recommended: **install all kexts** from EFI/CLOVER/kexts/Other (and any kext from the subfolder matching your macOS version) **to L/E (/Library/Extensions)** with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
 3. Now trackpad and audio input should work. Next you need to **fill the EFI partition on your internal hard disk with the Clover EFI folder**. You can use Clover Configurator to mount your System EFI. Next back up the existing System EFI folder and copy this release's EFI folder to your system EFI partition
 4. Run Clover Configurator, click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the 'Generate New' button. That will change both, system and board serial number, which should hopefully enable you to use iCloud

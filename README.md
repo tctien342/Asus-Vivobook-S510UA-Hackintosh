@@ -11,7 +11,7 @@
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	Clover with ACPI hotpatch by RehabMan, ported from Asus ZenBook by hieplpvip
-    Changelog:   	see Changelog.rtf
+   Changelog:   	see [Changelog.md](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
 
 # System specification
 

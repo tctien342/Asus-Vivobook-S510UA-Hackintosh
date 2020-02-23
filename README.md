@@ -39,14 +39,14 @@ Users with VivoBooks with the **ELAN 1200** Touchpad are advised to rather use [
 1. The **Touchpad** is not perfect - you *might* encounter occasional hangs and possibly erratic movements because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. With VoodooI2C v.2.0.3 (used for now for stability and reliability), certain minor functions don't work: Fn+F9 (Touchpad off/on) and some touchpad gestures like pinch zoom. For more info see [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
 2. Apple **Safe Sleep** ("***Hibernate***") doesn't work and has been disabled. In any case, additionally apply "*post macOS Installations/set hibernatemode to 0*"
 3. **Battery life** isn't great to begin with, not even in Windows. On some VivoBooks it seems to be even worse in macOS. A S510UQ user ([Quhuy0410](https://www.tonymacx86.com/members/quhuy0410.2255980/)) claims longer battery life with model MacBookAir8,2 chosen in the SMBIOS section. Feel free to experiment. Mind that CPUFriendDataProvider.kext ***must*** match your chosen model. For that sake, navigate to "*post macOS Installations/[Optional]/change CPU Performance*".
-4. **Sound quality** isn't great because the speakers are medocre in general, and are in the bottom of the case. For tips on better sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
+4. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse were placed into the bottom of the case. For tips to improve ther sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
 
 # Tools to use
 * Your favorite hackintosh USB installer maker (e.g. [UniBeast](https://www.unibeast.com/))
 * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 * Hackintool ([Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direct download always latest version](http://headsoft.com.au/download/mac/Hackintool.zip))
 * Kext Updater ([Download](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German})
-* somewhat outdated but still seems to be working fine even in Catalina: [KCPM Utility Pro](https://www.firewolf.science/tag/kcpm-utility-pro/) (2017-06-22 - use with caution!)
+* somewhat outdated but still seems to be working fine even in Catalina: [KCPM Utility Pro](https://www.firewolf.science/tag/kcpm-utility-pro/) (2017-06-22, therefore use with caution!)
 
 
 # Steps to install macOS

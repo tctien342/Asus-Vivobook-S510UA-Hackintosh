@@ -1,0 +1,3 @@
+AsusSMC.kext adds Fn+3 - Fn+9. The sound keys Fn+10 - Fn+12 already work without this kext.
+
+For Fn+1 (Sleep) and Fn+2 (Airplane mode) to work, you additionally need to install the daemon as per the instructions on https://github.com/hieplpvip/AsusSMC/wiki/Installation-Instruction

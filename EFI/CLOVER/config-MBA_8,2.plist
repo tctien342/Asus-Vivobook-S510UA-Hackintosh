@@ -594,10 +594,10 @@
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
-		<string>SMCHelper-64</string>
-		<string>VBoxHfs</string>
 		<string>ApfsDriverLoader-64</string>
+		<string>VBoxHfs</string>
 		<string>AptioMemoryFix-64</string>
+		<string>SMCHelper-64</string>
 	</array>
 	<key>GUI</key>
 	<dict>
@@ -734,7 +734,6 @@
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-			<string>\Library\Extensions\HandsOff.kext</string>
 		</array>
 		<key>KernelLapic</key>
 		<false/>

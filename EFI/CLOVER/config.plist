@@ -594,8 +594,8 @@
 	<array>
 		<string>AptioMemoryFix-64</string>
 		<string>ApfsDriverLoader-64</string>
-		<string>SMCHelper-64</string>
 		<string>VBoxHfs</string>
+		<string>SMCHelper-64</string>
 	</array>
 	<key>GUI</key>
 	<dict>
@@ -739,12 +739,11 @@
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-			<string>\Library\Extensions\HandsOff.kext</string>
 		</array>
 		<key>KernelLapic</key>
-		<true/>
+		<false/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>

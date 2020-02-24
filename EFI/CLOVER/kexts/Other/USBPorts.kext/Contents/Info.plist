@@ -37,8 +37,7 @@
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>port-count</key>
-				<data>
-				DwAAAA==				</data>
+				<data>DwAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
@@ -46,80 +45,70 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						AQAAAA==						</data>
+						<data>AQAAAA==</data>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
-						<data>
-						AgAAAA==						</data>
+						<data>AgAAAA==</data>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						AwAAAA==						</data>
+						<data>AwAAAA==</data>
 					</dict>
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BAAAAA==						</data>
+						<data>BAAAAA==</data>
 					</dict>
 					<key>HS06</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						BgAAAA==						</data>
+						<data>BgAAAA==</data>
 					</dict>
 					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BwAAAA==						</data>
+						<data>BwAAAA==</data>
 					</dict>
 					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						CAAAAA==						</data>
+						<data>CAAAAA==</data>
 					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						DQAAAA==						</data>
+						<data>DQAAAA==</data>
 					</dict>
 					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DgAAAA==						</data>
+						<data>DgAAAA==</data>
 					</dict>
 					<key>SS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DwAAAA==						</data>
+						<data>DwAAAA==</data>
 					</dict>
 				</dict>
 			</dict>
@@ -141,8 +130,7 @@
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>port-count</key>
-				<data>
-				DwAAAA==				</data>
+				<data>DwAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
@@ -150,80 +138,70 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						AQAAAA==						</data>
+						<data>AQAAAA==</data>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
-						<data>
-						AgAAAA==						</data>
+						<data>AgAAAA==</data>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						AwAAAA==						</data>
+						<data>AwAAAA==</data>
 					</dict>
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BAAAAA==						</data>
+						<data>BAAAAA==</data>
 					</dict>
 					<key>HS06</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						BgAAAA==						</data>
+						<data>BgAAAA==</data>
 					</dict>
 					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BwAAAA==						</data>
+						<data>BwAAAA==</data>
 					</dict>
 					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						CAAAAA==						</data>
+						<data>CAAAAA==</data>
 					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						DQAAAA==						</data>
+						<data>DQAAAA==</data>
 					</dict>
 					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DgAAAA==						</data>
+						<data>DgAAAA==</data>
 					</dict>
 					<key>SS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DwAAAA==						</data>
+						<data>DwAAAA==</data>
 					</dict>
 				</dict>
 			</dict>
@@ -245,8 +223,7 @@
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>port-count</key>
-				<data>
-				DwAAAA==				</data>
+				<data>DwAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
@@ -254,80 +231,70 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						AQAAAA==						</data>
+						<data>AQAAAA==</data>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
-						<data>
-						AgAAAA==						</data>
+						<data>AgAAAA==</data>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						AwAAAA==						</data>
+						<data>AwAAAA==</data>
 					</dict>
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BAAAAA==						</data>
+						<data>BAAAAA==</data>
 					</dict>
 					<key>HS06</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						BgAAAA==						</data>
+						<data>BgAAAA==</data>
 					</dict>
 					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BwAAAA==						</data>
+						<data>BwAAAA==</data>
 					</dict>
 					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						CAAAAA==						</data>
+						<data>CAAAAA==</data>
 					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						DQAAAA==						</data>
+						<data>DQAAAA==</data>
 					</dict>
 					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DgAAAA==						</data>
+						<data>DgAAAA==</data>
 					</dict>
 					<key>SS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DwAAAA==						</data>
+						<data>DwAAAA==</data>
 					</dict>
 				</dict>
 			</dict>
@@ -349,8 +316,7 @@
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>port-count</key>
-				<data>
-				DwAAAA==				</data>
+				<data>DwAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
@@ -358,80 +324,70 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						AQAAAA==						</data>
+						<data>AQAAAA==</data>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
-						<data>
-						AgAAAA==						</data>
+						<data>AgAAAA==</data>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						AwAAAA==						</data>
+						<data>AwAAAA==</data>
 					</dict>
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BAAAAA==						</data>
+						<data>BAAAAA==</data>
 					</dict>
 					<key>HS06</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						BgAAAA==						</data>
+						<data>BgAAAA==</data>
 					</dict>
 					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BwAAAA==						</data>
+						<data>BwAAAA==</data>
 					</dict>
 					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						CAAAAA==						</data>
+						<data>CAAAAA==</data>
 					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						DQAAAA==						</data>
+						<data>DQAAAA==</data>
 					</dict>
 					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DgAAAA==						</data>
+						<data>DgAAAA==</data>
 					</dict>
 					<key>SS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DwAAAA==						</data>
+						<data>DwAAAA==</data>
 					</dict>
 				</dict>
 			</dict>
@@ -453,8 +409,7 @@
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>port-count</key>
-				<data>
-				DwAAAA==				</data>
+				<data>DwAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
@@ -462,80 +417,70 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						AQAAAA==						</data>
+						<data>AQAAAA==</data>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
-						<data>
-						AgAAAA==						</data>
+						<data>AgAAAA==</data>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						AwAAAA==						</data>
+						<data>AwAAAA==</data>
 					</dict>
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BAAAAA==						</data>
+						<data>BAAAAA==</data>
 					</dict>
 					<key>HS06</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						BgAAAA==						</data>
+						<data>BgAAAA==</data>
 					</dict>
 					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>port</key>
-						<data>
-						BwAAAA==						</data>
+						<data>BwAAAA==</data>
 					</dict>
 					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
-						<data>
-						CAAAAA==						</data>
+						<data>CAAAAA==</data>
 					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>
-						DQAAAA==						</data>
+						<data>DQAAAA==</data>
 					</dict>
 					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DgAAAA==						</data>
+						<data>DgAAAA==</data>
 					</dict>
 					<key>SS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>port</key>
-						<data>
-						DwAAAA==						</data>
+						<data>DwAAAA==</data>
 					</dict>
 				</dict>
 			</dict>

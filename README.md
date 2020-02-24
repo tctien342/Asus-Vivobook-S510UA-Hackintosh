@@ -7,7 +7,7 @@
 # Details
 
     Version:    	10.0
-    Date:       	Feb. 23, 2020
+    Date:       	Feb. 24, 2020
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	Clover with ACPI hotpatch by RehabMan, ported from Asus ZenBook by hieplpvip

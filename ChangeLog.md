@@ -1,4 +1,4 @@
-## Release v.10.0, Feb. 23 2020
+## Release v.10.0, Feb. 24 2020
 
 It contains (among others) the following changes:
 
@@ -10,6 +10,7 @@ It contains (among others) the following changes:
 - [[OPTION] Touchpad: possibly smoother more reliable overall experience with custom polling mode SSDT](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/43)
 - [[IMPROVED/ OPTION] Touchpad: smoother more reliable 2-finger operations with custom VoodooI2C v.2.0.3](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/42)
 - [[IMPROVED] SSDT-less USB ports approach for better Bluetooth compatibility](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/45)
+- [IMPROVED] Clover config, Kernel and Kext Patches: deactivated 'Kernel LAPIC' and 'Kernel PM', enabled 'TRIM for SSD' (for details read through [EFI pre-v.10.0 for Asus Vivobook S15](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/46))
 
 ### Also see:
 

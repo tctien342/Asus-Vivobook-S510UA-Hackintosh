@@ -1,6 +1,8 @@
 # _Wi-Fi & Bluetooth_
 
-For working Wi-Fi, Bluetooth and continuity features, the following kexts need to be present. The instructions apply to both, DW1560 and FRU 04X6020. For the least memory footprint it is recommeneded to (rather than BrcmFirmwareData.kext) use **BrcmFirmwareRepo**.kext. It does ***not work*** from E/C/k/O (EFI/CLOVER/kexts/Other) but ***must*** be installed to L/E (/Library/Extensions). Accordingly, ***any other*** necessary kext(s) from the BrcmPatchRAM package ***must*** be installed to L/E, too, and ***removed from E/C/k/O***, for most reliable functionality!
+For the **Fenvi BCM94360NG**, no extra kexts should be necessary - you should even be able to remove *AirportBrcmFixup.kext* from Clover/Kexts/Other. For more details read [whatnameisit's findings about it](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/46#issuecomment-592947028), bullet '2.' of his comment.
+
+Below instructions apply to the **DW1560** and the **FRU 04X6020**. For the least memory footprint it is recommeneded to (rather than BrcmFirmwareData.kext) use **BrcmFirmwareRepo**.kext. It does ***not work*** from E/C/k/O (EFI/CLOVER/kexts/Other) but ***must*** be installed to L/E (/Library/Extensions). Accordingly, ***any other*** necessary kext(s) from the BrcmPatchRAM package ***must*** be installed to L/E, too, and ***removed from E/C/k/O***, for most reliable functionality!
 
 
 ### Mojave, High Sierra:  

@@ -52,11 +52,20 @@ Users with VivoBooks without keyboard backlight are advised to rather use [whatn
 
 # Steps to install macOS
 
-    1. Prepare a macOS installer on a USB flash drive with Clover added (use e.g. Unibeast to create it)
-    2. Replace the EFI folder in the USB EFI partition with this INCLUDED EFI FOLDER
-    3. Boot into USB and select macOS installer
-    4. On first boot Trackpad will not work - you do need a mouse connected via USB.
-    5. Follow macOS install instructions (you can find them in you favorite hackintosh forum) to boot into macOS.
+
+1. Enter the BIOS and set the following options:
+
+	- Display memory: 64MB
+	- Disable VT-D
+	- Disable Fast Boot
+	- Disable Secure Boot
+	- recommended: set the EFI partition with Clover as the first boot loader
+
+2. Prepare a macOS installer on a USB flash drive with Clover added (use e.g. Unibeast to create it)
+3. Replace the EFI folder in the USB EFI partition with this INCLUDED EFI FOLDER
+4. Boot into USB and select macOS installer
+5. On first boot Trackpad will not work - you do need a mouse connected via USB.
+6. Follow macOS install instructions (you can find them in your favorite hackintosh forum) to boot into macOS.
 
 # Steps after installing macOS
     

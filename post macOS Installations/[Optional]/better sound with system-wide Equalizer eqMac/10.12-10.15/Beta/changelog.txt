@@ -1,0 +1,11 @@
+2020-03-23: eqMac Beta v0.0.1
+
+    - Decreased audio processing delay
+    - Not blocking main thread when installing audio driver
+    - Improved Font rendering
+    - Fix some crashes on Catalina
+
+
+2020-01-07: eqMac Beta v0.0.0
+
+	- First ever release of the all new eqMac

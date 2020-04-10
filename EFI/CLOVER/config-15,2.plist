@@ -532,7 +532,7 @@
 		<key>#DefaultVolume</key>
 		<string>BC58D1DD-A41F-4B3F-752C-9B493D399C95</string>
 		<key>Arguments</key>
-		<string>igfxcflbklt=0 keepsyms=1 kext-dev-mode=1 abm_firstpolldelay=8000 brcmfx-country= bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400 -brcmfxwowl -f -v</string>
+		<string>igfxcflbklt=0 keepsyms=1 kext-dev-mode=1 brcmfx-country=US bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400 -brcmfxwowl -f -v</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>HibernationFixup</key>
@@ -594,10 +594,10 @@
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
-		<string>SMCHelper-64</string>
-		<string>VBoxHfs</string>
 		<string>ApfsDriverLoader-64</string>
 		<string>AptioMemoryFix-64</string>
+		<string>SMCHelper-64</string>
+		<string>VBoxHfs</string>
 	</array>
 	<key>GUI</key>
 	<dict>

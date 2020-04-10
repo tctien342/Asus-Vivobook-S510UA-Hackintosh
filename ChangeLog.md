@@ -1,3 +1,7 @@
+### 2020-04-10:
+
+- assigned real country code (US) across all config plist files to Boot/Arguments/brcmfx-country so Wi-Fi networks get detected even w/o any edit (user is still encouraged to set desired country code)
+
 ## Release v.10.0, Feb. 24 2020
 
 It contains (among others) the following changes:

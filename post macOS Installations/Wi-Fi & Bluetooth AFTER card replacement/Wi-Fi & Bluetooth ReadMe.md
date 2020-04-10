@@ -15,10 +15,12 @@ Below instructions apply to the **DW1560** and the **FRU 04X6020**. For the leas
 
 ### Notes:
 
-1. As per recommendations, any kext incl. **AirportBrcmFixup**.kext also works as supposed if installed to L/E.
+1. Recommended: set your country code in EFI/CLOVER/config.plist (and any other config you might use): `Boot/Arguments/brcmfx-country=` to your country. Example: `DE` for Germany
+
+2. As per recommendations, any kext incl. **AirportBrcmFixup**.kext also works as supposed if installed to L/E.
 
 
-2. Neither the **DW1560** nor the F**RU 04X6020** need:
+3. Neither the **DW1560** nor the F**RU 04X6020** need:
 
 - BT4LEContinuityFixup.kext
 - FakePCIID.kext

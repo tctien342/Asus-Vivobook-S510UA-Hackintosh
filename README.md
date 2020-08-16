@@ -25,7 +25,7 @@
     8.Touchpad:		ELAN 1300
     9.BIOS Version:		x510UAR 310
 
-Users with VivoBooks with only the Intel UHD 620 and no dedicated Nvidia dGPU are advised to rather use [whatnameisit's X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Catalina-10.15.3-Hackintosh). His repo is also far ahead in commits = more up-to-date!
+Users with VivoBooks with only the Intel UHD 620 and no dedicated Nvidia dGPU are advised to rather use [whatnameisit's X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Catalina-10.15.3-Hackintosh). It is also far ahead in commits = more up-to-date!
 
 # Unsupported Hardware
 

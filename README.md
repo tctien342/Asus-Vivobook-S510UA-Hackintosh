@@ -1,6 +1,6 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS 10.13.6 - 10.15.3**
+**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS 10.13.6 - 10.15.7**
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 

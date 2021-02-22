@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URL</key>
+	<string>https://github.com/acidanthera/bugtracker/issues?q=is%3Aopen+is%3Aissue+label%3Aproject%3Aalc</string>
+</dict>
+</plist>

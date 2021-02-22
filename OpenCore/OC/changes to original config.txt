@@ -1,0 +1,9 @@
+ACPI:
+	- add SSDT-ATKD-BKL.aml Keyboard backlight
+	- replace SSDT-PS2.aml with SSDT-Swap-CommandOption.aml
+	
+Misc:
+	- Boot > LauncherOption: disabled
+	- Debug > Target: 67
+	- Security > Expose Sensitive Data: 3
+

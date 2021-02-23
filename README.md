@@ -10,7 +10,8 @@
     Date:       	Feb. 23, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
-    Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  Changelog:   	see [Changelog.md](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
+    Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
+   Changelog:   	see [Changelog.md](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
 
 # System specification
 

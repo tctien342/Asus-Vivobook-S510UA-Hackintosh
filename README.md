@@ -93,26 +93,30 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 
 4. **OpenCore Configurator**:
     * click onto **PlatformInfo** in the side bar on the left
-    * on the right top, click onto the 1st tab 'DataHub - Generic - PlatformNVRAM'. You will see four text fields with `update this field`.
-    * open a new empty instance of OC C leaving this instance opeb, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage`, choose `MacBookPro15,4`
+    * on the right top, click onto the 1st tab 'DataHub - Generic - PlatformNVRAM'. You will see four text fields with `update this field`
+    * open a new empty instance of OC C leaving this instance open, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage`, choose `MacBookPro15,4`
     * in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance.
     * save
  
      **Clover Configurator**: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number. Save.
 
-Above steps are necessary to - amongst other things - hopefully be able to use iCloud.
+ Above steps are necessary to - amongst other things - hopefully be able to use iCloud.
 
 5. **Reboot and ENJOY :)**
 
-# _ATTENTION - be careful with Updates_!
-**Be especially mindful with VirtualSMC Updates!** If the versions of VirtualSMC, accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) and corresponding **efi driver** (EFI/CLOVER/drivers/UEFI/**VirtualSmc.efi**) do not match, touchpad and battery issues may arise! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
 
 # Wi-Fi Replacement
 
-1. Replace your existing Wi-Fi/ Bluetooth card with either a **Fenvi BCM94360NG** (read [whatnameisit's findings about it](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/46#issuecomment-592947028) under 2.), a **DW1560** (most wide-spread and best supported) or a FRU 04X6020 (or a different kind if you can find a better one)
-2. Follow the instructions in "[post macOS Installations/Bluetooth AFTER card replacement/Wi-Fi & Bluetooth ReadMe.md](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/blob/master/post%20macOS%20Installations/Bluetooth%20AFTER%20card%20replacement/Wi-Fi%20%26%20Bluetooth%20ReadMe.md)"
-3. Rebuild kext cache and repair L/E permissions, e.g. with Kext Updater, Hackintool etc.
-4. Reboot and **ENJOY even more** :)
+Replace your existing Wi-Fi/ Bluetooth M.2 card preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should remove *ALL* related kexts from inside your EFI folder (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`).
 
-### Special Credits for this repo to these hackintoshers:
+Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one)
+
+Reboot and **ENJOY even more** :)
+
+# _ATTENTION - be careful with Updates_!
+**Be especially mindful with VirtualSMC Updates!** The VirtualSMC version should match those of accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) to avoid touchpad and battery issues! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
+
+--------------------------------
+_________________________
+## Special Credits for this repo to these hackintoshers:
 **tctien342** (originator), **LeeBinder** (current repo maintainer), **whatnameisit** (main contributor), **hieplpvip** (contributor), **fewtarius** (facilitator), any to many *MANY* others..

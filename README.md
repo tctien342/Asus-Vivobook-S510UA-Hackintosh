@@ -18,7 +18,7 @@
     • Model Name:		Asus VivoBook S510UA
     • CPU:			Intel Core i5-8250U
     • Video Graphics:	Intel UHD 620
-    • Wi-Fi:		Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 or FRU 04X6020 (AirDrop and Handoff Working perfectly)
+    • Wi-Fi & Bluetooth:	Intel Dual Band Wireless-AC 8265  // replacements see below
     • Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)
     • Camera:		ASUS UVC HD
     • Audio:		Conexant Audio CX8050
@@ -31,33 +31,39 @@ This repo is based on whatnameisit's brilliant and cutting-edge [repo for his Vi
 1. re-added keyboard backlight support
 2. re-added a Clover EFI as *secondary* bootloader alternative by backporting OC's ACPI into Clover config.
 
-Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh). He also has been tending it very actively so it is more likely to be as up-to-date as possible! Note that **he does *not* offer a Clover EFI** and that **you *do* need to be able to handle OpenCore**!
+Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh). He also has been tending it very actively so it is more likely to be as up-to-date as possible! Note that **he does *not* offer a Clover EFI** and that **you *do* need to be able to handle OpenCore**! _In any case_ please do read through his [ReadME](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) because it contains a wealth of important info and links which also apply to this repo!
 
-Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other features. For more detailed comparisons, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
-
+Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other features. For a more detailed comparison, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
 
 # Unsupported Hardware & Features
 
-    1. dGPU like 940MX
-    2. Fingerprint reader
-    3. 'FN + media controller' key combo
-    4. Intel  Wi-Fi - replacements see below
-    5. The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
+    • dGPU like 940MX
+    • Fingerprint reader
+    • 'FN + media controller' key combo
+    • Intel  Wi-Fi - replacements see below
+The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
 
 # Known Issues, weaknesses and oddities
 
-1. The **Touchpad** is not perfect - you *might* encounter occasional hangs and possibly erratic movements because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. With VoodooI2C v.2.0.3 (used for now for stability and reliability), certain minor functions don't work: Fn+F9 (Touchpad off/on) and some touchpad gestures like pinch zoom. For more info see [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
+1. The **Touchpad** is not perfect - you *might* encounter occasional hangs and possibly erratic movements because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. Some older info is archived at [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
 2. Apple **Safe Sleep** ("***Hibernate***") doesn't work and has been disabled. In any case, additionally apply "*post macOS Installations/set hibernatemode to 0*"
 3. **Battery life** isn't great to begin with, not even in Windows. On some VivoBooks it seems to be even worse in macOS. A S510UQ user ([Quhuy0410](https://www.tonymacx86.com/members/quhuy0410.2255980/)) claims longer battery life with model MacBookAir8,2 chosen in the SMBIOS section. Feel free to experiment. Mind that CPUFriendDataProvider.kext ***must*** match your chosen model. For that sake, navigate to "*post macOS Installations/[Optional]/change CPU Performance*".
 4. **Sleep**: in macOS, the VivoBook needs appr. 15 secs. to power down completely. You will hear the fan spin up again before the system finally settles (power LED on the left blinking white, indicating sleep mode).
 4. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
 
 # Tools to use
-* Your favorite hackintosh USB installer maker (e.g. [UniBeast](https://www.unibeast.com/))
-* [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
-* Hackintool ([Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direct download always latest version](http://headsoft.com.au/download/mac/Hackintool.zip))
-* Kext Updater ([Download](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German})
-* somewhat outdated but still seems to be working fine even in Catalina: [KCPM Utility Pro](https://www.firewolf.science/tag/kcpm-utility-pro/) (2017-06-22, therefore use with caution!)
+* Your favorite macOS or hackintosh USB installer maker
+* Hackintool: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direct download always latest version](http://headsoft.com.au/download/mac/Hackintool.zip)
+* Kext Updater: [Download](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
+
+ ### OpenCore:
+ * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
+ * [Online Reference Manual](https://dortania.github.io/docs/latest/Configuration.html)
+
+
+ ### Clover:<br/>
+ * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+ *  [Online Documentation in Russian & English](https://dortania.github.io/docs/latest/Configuration.html)
 
 
 # Steps to install macOS
@@ -71,10 +77,10 @@ Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acida
 	- Disable Secure Boot
 	- recommended: set the EFI partition with Clover as the first boot loader
 
-2. Prepare a macOS installer on a USB flash drive with Clover added (use e.g. Unibeast to create it)
-3. Replace the EFI folder in the USB EFI partition with this INCLUDED EFI FOLDER
+2. Prepare a macOS installer on a USB flash drive with OC or Clover added
+3. Replace the EFI folder in the USB EFI partition with the matching one (OC or Clover) from this repo
 4. Boot into USB and select macOS installer
-5. On first boot Trackpad will not work - you do need a mouse connected via USB.
+5. Recommended: a mouse connected via USB in case Trackpad does not work right away
 6. Follow macOS install instructions (you can find them in your favorite hackintosh forum) to boot into macOS.
 
 # Steps after installing macOS

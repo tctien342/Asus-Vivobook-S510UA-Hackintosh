@@ -61,7 +61,7 @@ The support for DRM contents is limited due to incompatible firmware. Please see
  - [Online Reference Manual](https://dortania.github.io/docs/latest/Configuration.html)
 
 
- ### Clover:<br/>
+ ### Clover:
  • [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
  • [Online Documentation in Russian & English](https://dortania.github.io/docs/latest/Configuration.html)
 

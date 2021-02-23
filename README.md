@@ -130,7 +130,7 @@ As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 
 
 - save and reboot
 
-Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one). If you opt for one of these, you need to adapt the boot argument `brcmfx-country=#a` to match your country code. Example: `brcmfx-country=DE` for Germany, US for USA etc. You find it at the same spot(s) as described above.
+Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one). If you opt for one of these, you need to adapt the boot argument `brcmfx-country=#a` to match your country code. Example: `brcmfx-country=DE` for Germany, `US` for USA etc. You find it at the same spot(s) as described above.
 
 # Recommendations
 1. **OC (1st) + Clover (2nd)**: On your SSD's ESP, have OC's EFI folder so OC is your main bootloader; additionally create a separate FAT partition with at least 50+ MB, label it `Clover` and copy the Clover EFI folder onto it and onfigure it accdg. to above instructions. Make sure you use the same SMBIOS Platform Info in both config.plists so you don't experience oddities!

@@ -111,9 +111,9 @@ As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 
 Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one).
 
 # Recommendations
-
-1. **Downscale monitor resolution to 1600 x 900** for two reasons: **a)** you will need to squint much less or ideally not at all because human eyes are simply not made for a 1920 x 1080 resolution on a 15,6" screen, period; and b) your monitor will use less energy = longer battery life!
-2. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
+1. **OC (1st) + Clover (2nd)**: On your SSD's ESP, have OC's EFI folder so OC is your main bootloader; additionally create a separate FAT partition with at least 50+ MB, label it `Clover` and copy the Clover EFI folder onto it and onfigure it accdg. to above instructions. Make sure you use the same SMBIOS Platform Info in both config.plists so you don't experience oddities!
+2. **Downscale monitor resolution to 1600 x 900** for two reasons: **a)** you will need to squint much less or ideally not at all because human eyes are simply not made for a 1920 x 1080 resolution on a 15,6" screen, period; and b) your monitor will use less energy = longer battery life!
+3. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
 
 
 # _ATTENTION - be careful with Updates_!

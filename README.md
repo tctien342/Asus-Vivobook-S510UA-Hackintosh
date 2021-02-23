@@ -40,16 +40,16 @@ Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acida
     • dGPU like 940MX
     • Fingerprint reader
     • 'FN + media controller' key combo
-    • Intel  Wi-Fi - replacements see below
+    • Apple Safe Sleep ("Hibernate")
+    • Intel  Wi-Fi - replacement see below
 The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
 
 # Known Issues, weaknesses and oddities
 
 1. The **Touchpad** is not perfect - you *might* encounter occasional hangs and possibly erratic movements because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. Some older info is archived at [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
-2. Apple **Safe Sleep** ("***Hibernate***") doesn't work and has been disabled. In any case, additionally apply "*post macOS Installations/set hibernatemode to 0*"
+2. Apple **Safe Sleep** ("Hibernate", "Deep Sleep") doesn't work and has been disabled. In any case, additionally apply "*post macOS Installations/set hibernatemode to 0*"
 3. **Battery life** isn't great to begin with, not even in Windows. On some VivoBooks it seems to be even worse in macOS. A S510UQ user ([Quhuy0410](https://www.tonymacx86.com/members/quhuy0410.2255980/)) claims longer battery life with model MacBookAir8,2 chosen in the SMBIOS section. Feel free to experiment. Mind that CPUFriendDataProvider.kext ***must*** match your chosen model. For that sake, navigate to "*post macOS Installations/[Optional]/change CPU Performance*".
 4. **Sleep**: in macOS, the VivoBook needs appr. 15 secs. to power down completely. You will hear the fan spin up again before the system finally settles (power LED on the left blinking white, indicating sleep mode).
-4. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
 
 # Tools to use
 * Your favorite macOS or hackintosh USB installer maker
@@ -64,7 +64,6 @@ The support for DRM contents is limited due to incompatible firmware. Please see
  ### Clover:
  * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
  *  [Online Documentation](https://drovosek01.github.io/CloverHackyColor-WebVersion/) (Russian & English)
-
 
 # Steps to install macOS
 
@@ -107,9 +106,14 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 
 # Wi-Fi Replacement
 
-As of 2021-02-23 there is still no fully working macOS driver for the Intel AC 8265 M.2 card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should remove *ALL* related kexts from inside your EFI folder (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`).
+As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should remove *ALL* related kexts from inside your EFI folder (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`).
 
 Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one).
+
+# Recommendations
+
+1. **Downscale monitor resolution to 1600 x 900** for two reasons: **a)** you will need to squint much less or ideally not at all because human eyes are simply not made for a 1920 x 1080 resolution on a 15,6" screen, period; and b) your monitor will use less energy = longer battery life!
+2. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
 
 
 # _ATTENTION - be careful with Updates_!

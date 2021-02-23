@@ -92,10 +92,10 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 3. **Fill your internal hard disk's EFI partition with the OC or Clover EFI folder**. You can use the matching Configurator to mount your system ESP (EFI System Partition). Next back up the existing System EFI folder and copy one of this release's EFI folders to your system's ESP.
 
 4. **OpenCore Configurator**:
- - click onto **PlatformInfo** in the side bar on the left
- - on the right top, click onto the 1st tab 'DataHub - Generic - PlatformNVRAM'. You will see four text fields with `update this field`.
- - open a new empty instance of OC C leaving this instance opeb, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage`, choose `MacBookPro15,4`
- - in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance.<br/>
+  - click onto **PlatformInfo** in the side bar on the left
+  - on the right top, click onto the 1st tab 'DataHub - Generic - PlatformNVRAM'. You will see four text fields with `update this field`.
+  - open a new empty instance of OC C leaving this instance opeb, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage`, choose `MacBookPro15,4`
+  - in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance.<br/>
  
       **Clover Configurator**: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.
 

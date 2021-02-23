@@ -26,14 +26,23 @@
     • Keyboard Backlight:	Yes
     • BIOS Version:		x510UAR 310
 
-Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's X510UA-BQ490 OpenCore repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Catalina-10.15.3-Hackintosh). He also has been tending his repo very actively so it is more likely to be as up-to-date as possible! Note that **he does *not* offer a Clover EFI** and that **you *do* need to be able to handle OpenCore**!
+This repo is based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
 
-# Unsupported Hardware
+1. re-added keyboard backlight support
+2. re-added a Clover EFI as *secondary* bootloader alternative by backporting OC's ACPI into Clover config.
+
+Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh). He also has been tending it very actively so it is more likely to be as up-to-date as possible! Note that **he does *not* offer a Clover EFI** and that **you *do* need to be able to handle OpenCore**!
+
+Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other features. For more detailed comparisons, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
+
+
+# Unsupported Hardware & Features
 
     1. dGPU like 940MX
     2. Fingerprint reader
     3. 'FN + media controller' key combo
-    4. Intel  Wi-Fi - replacement see below
+    4. Intel  Wi-Fi - replacements see below
+    5. The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
 
 # Known Issues, weaknesses and oddities
 

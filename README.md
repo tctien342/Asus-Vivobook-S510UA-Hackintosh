@@ -57,13 +57,13 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 * Kext Updater: [Download](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
 
  ### OpenCore:
- - [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
- - [Online Reference Manual](https://dortania.github.io/docs/latest/Configuration.html)
+ * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
+ * [Online Reference Manual](https://dortania.github.io/docs/latest/Configuration.html)
 
 
  ### Clover:
- • [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
- • [Online Documentation in Russian & English](https://dortania.github.io/docs/latest/Configuration.html)
+ * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+ *  [Online Documentation in Russian & English](https://dortania.github.io/docs/latest/Configuration.html)
 
 
 # Steps to install macOS

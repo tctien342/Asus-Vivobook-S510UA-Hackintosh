@@ -118,4 +118,4 @@ Reboot and **ENJOY even more** :)
 
 _________________________
 ## Special Credits for this repo to these hackintoshers:
-**tctien342** (originator), **LeeBinder** (current repo maintainer), **whatnameisit** (main contributor), **hieplpvip** (contributor), **fewtarius** (facilitator), any to many *MANY* others..
+**whatnameisit**: main contributor, maintainer of the [VivoBook X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/) | **tctien342**: originator of this VivoBook S15 repo ([archived](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases)) | **hieplpvip**: originator of the [base ZenBook repo](https://github.com/hieplpvip/Asus-Zenbook-Hackintosh) & [AsusSMC](https://github.com/hieplpvip/AsusSMC), contributor | **[fewtarius](https://github.com/fewtarius)**: facilitator; and to [many](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/README.md#credits) *MANY* others....

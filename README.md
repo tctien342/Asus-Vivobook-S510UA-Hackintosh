@@ -72,6 +72,7 @@ If there is more than one boot-arg, make sure you separate them with a space fro
 * Your favorite macOS or hackintosh USB installer maker
 * Hackintool: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direct download always latest version](http://headsoft.com.au/download/mac/Hackintool.zip)
 * Kext Updater: [Download](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
+* A XML property list editor like [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) if you don't have Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) installed
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)

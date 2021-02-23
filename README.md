@@ -1,31 +1,31 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS 10.13.6 - 10.15.7**
+**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Mojave 10.14.6 - Big Sur 11.2.1
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
 # Details
 
-    Version:    	10.0.1
-    Date:       	Mar. 1, 2020
+    Version:    	11.0 RC (Release Candidate) 1
+    Date:       	Feb. 23, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
-    Technology:	Clover with ACPI hotpatch by RehabMan, ported from Asus ZenBook by hieplpvip
-   Changelog:   	see [Changelog.md](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
+    Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  Changelog:   	see [Changelog.md](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
 
 # System specification
 
-    1.Model Name:		Asus VivoBook S510UA
-    2.CPU:			Intel Core i5-8250U
-    3.Video Graphics:	Intel UHD 620
-    4.Wi-Fi:		Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 or FRU 04X6020 (AirDrop and Handoff Working perfectly)
-    5.Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)
-    6.Camera:		ASUS UVC HD
-    7.Audio:		Conexant Audio CX8050
-    8.Touchpad:		ELAN 1300
-    9.BIOS Version:		x510UAR 310
+    • Model Name:		Asus VivoBook S510UA
+    • CPU:			Intel Core i5-8250U
+    • Video Graphics:	Intel UHD 620
+    • Wi-Fi:		Intel Dual Band Wireless-AC 8265 - with bluetooth // REPLACED WITH DW1560 or FRU 04X6020 (AirDrop and Handoff Working perfectly)
+    • Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)
+    • Camera:		ASUS UVC HD
+    • Audio:		Conexant Audio CX8050
+    • Touchpad:		ELAN 1300
+    • Keyboard Backlight: Yes
+    • BIOS Version:		x510UAR 310
 
-Users with VivoBooks with only the Intel UHD 620 and no dedicated Nvidia dGPU are advised to rather use [whatnameisit's X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Catalina-10.15.3-Hackintosh). It is also far ahead in commits = more up-to-date!
+Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Catalina-10.15.3-Hackintosh). He also has been tending his repo very actively so it is more likely to be as up-to-date as possible!
 
 # Unsupported Hardware
 

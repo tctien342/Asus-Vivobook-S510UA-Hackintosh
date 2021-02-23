@@ -23,7 +23,7 @@
     • Camera:		ASUS UVC HD
     • Audio:		Conexant Audio CX8050
     • Touchpad:		ELAN 1300
-    • Keyboard Backlight: Yes
+    • Keyboard Backlight:	Yes
     • BIOS Version:		x510UAR 310
 
 Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Catalina-10.15.3-Hackintosh). He also has been tending his repo very actively so it is more likely to be as up-to-date as possible!

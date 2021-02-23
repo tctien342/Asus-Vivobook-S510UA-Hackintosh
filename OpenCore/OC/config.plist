@@ -126,6 +126,14 @@
 				<key>Path</key>
 				<string>SSDT-ATKD-BKL.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Cut the power on the dGPU like NVIDIA GeForce 940MX etc.</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-RP01_PEGP.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -155,7 +163,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -181,7 +189,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -207,7 +215,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -233,7 +241,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -259,7 +267,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -285,7 +293,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -311,7 +319,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -337,7 +345,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -363,7 +371,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -389,7 +397,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -415,7 +423,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -441,7 +449,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -467,7 +475,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AA==</data>
+				<data></data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -1120,7 +1128,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string></string>
+				<string>-v brcmfx-country=#a bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>

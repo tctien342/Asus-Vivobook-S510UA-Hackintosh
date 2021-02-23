@@ -1,7 +1,10 @@
 ACPI:
 	- add SSDT-ATKD-BKL.aml Keyboard backlight
 	- replace SSDT-PS2.aml with SSDT-Swap-CommandOption.aml
-	- add dGPU !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ********************* !!!!!!!!!!!!!!!!
+	- add SSDT-RP01_PEGP.aml: Cut the power on the dGPU like NVIDIA GeForce 940MX etc.
+
+NVRAM:
+	- 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args: -v brcmfx-country=#a bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200
 	
 Misc:
 	- Boot > LauncherOption: disabled

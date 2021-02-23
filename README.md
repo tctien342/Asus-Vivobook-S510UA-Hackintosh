@@ -37,19 +37,36 @@ Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acida
 
 # Unsupported Hardware & Features
 
-    • dGPU like 940MX
+    • dGPU like NVIDIA GeForce 940MX
     • Fingerprint reader
-    • 'FN + media controller' key combo
+    • FN + media controller key combo
     • Apple Safe Sleep ("Hibernate")
-    • Intel  Wi-Fi - replacement see below
+    • Intel Wi-Fi - replacement see below
 The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
+
+# VivoBooks with an additional dGPU (NVIDIA GeForce 940MX etc.)
+
+**OpenCore** via OpenCore Configurator:
+
+- ACPI: enable `SSDT-RP01_PEGP.aml`
+- NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args: add `-wegnoegpu`
+- save & reboot
+
+**Clover:**
+
+- In the file system, navigate to `EFI/CLOVER/ACPI/patched/disbale dGPU (NVIDIA etc.)` and move `SSDT-RP01_PEGP.aml` one level higher into `patched`
+- via Clover Configurator: Boot > Arguments: add `-wegnoegpu`
+- save & reboot
+
+If there is more than one boot-arg, make sure you separate them with a space from each other!
 
 # Known Issues, weaknesses and oddities
 
 1. The **Touchpad** is not perfect - you *might* encounter occasional hangs and possibly erratic movements because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. Some older info is archived at [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
 2. Apple **Safe Sleep** ("Hibernate", "Deep Sleep") doesn't work and has been disabled. In any case, additionally apply "*post macOS Installations/set hibernatemode to 0*"
-3. **Battery life** isn't great to begin with, not even in Windows. On some VivoBooks it seems to be even worse in macOS. A S510UQ user ([Quhuy0410](https://www.tonymacx86.com/members/quhuy0410.2255980/)) claims longer battery life with model MacBookAir8,2 chosen in the SMBIOS section. Feel free to experiment. Mind that CPUFriendDataProvider.kext ***must*** match your chosen model. For that sake, navigate to "*post macOS Installations/[Optional]/change CPU Performance*".
+3. **Battery life** isn't great to begin with, not even in Windows. On some VivoBooks it seems to be even worse in macOS. A S510UQ user ([Quhuy0410](https://www.tonymacx86.com/members/quhuy0410.2255980/)) claims longer battery life with model `MacBookAir8,2` chosen in the SMBIOS section (of Clover config.plist). Feel free to experiment. Mind that `CPUFriendDataProvider.kext` ***must*** match your chosen model. For that sake, navigate to `post macOS Installations/[Optional]/change CPU Performance`
 4. **Sleep**: in macOS, the VivoBook needs appr. 15 secs. to power down completely. You will hear the fan spin up again before the system finally settles (power LED on the left blinking white, indicating sleep mode).
+5. **Swapped `<` and `^` keys**: If you have a keyboard with a `<` key next to the left ⇧ and a `^` key below the `ESC` key ([image](https://i.ebayimg.com/images/g/3WUAAOSw9ixe-fAq/s-l1600.jpg)) and these keys are reversed, and you neither want to use a tool like [Karabiner-Elements](https://karabiner-elements.pqrs.org/) nor know how to fix that via SSDT, simply stick to [VoodooPS2Controller.kext v.2.1.9](https://github.com/acidanthera/VoodooPS2/releases/tag/2.1.9) which is the only version I know to map these keys correctly for such VivoBook S15 models like mine.
 
 # Tools to use
 * Your favorite macOS or hackintosh USB installer maker
@@ -103,7 +120,14 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 
 # Wi-Fi Replacement
 
-As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should remove *ALL* related kexts from inside your EFI folder(s) (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`).
+As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should:
+
+- remove *ALL* related kexts from inside your EFI folder(s) (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`)
+- remove *ALL* related entries (brcmfx-country=#a bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) from your config.plist(s):
+**OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args
+**Clover:** Boot > Arguments (remove via the -)
+
+- save and reboot
 
 Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one).
 
@@ -118,5 +142,5 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 2. **VirtualSMC**: The VirtualSMC version should match those of accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) to avoid touchpad and battery issues! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
 
 _________________________
-## Special Credits for this repo to these hackintoshers:
-**whatnameisit**: main contributor, maintainer of the [VivoBook X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/) | **tctien342**: originator of this VivoBook S15 repo ([archived](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases)) | **hieplpvip**: originator of the [base ZenBook repo](https://github.com/hieplpvip/Asus-Zenbook-Hackintosh) & [AsusSMC](https://github.com/hieplpvip/AsusSMC), contributor | **[fewtarius](https://github.com/fewtarius)**: facilitator; and to [many](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/README.md#credits) *MANY* others....
+## Special Credits for this repo to these fellow hackintoshers:
+**whatnameisit**: main contributor; maintainer of the [VivoBook X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/) | **tctien342**: originator of this VivoBook S15 repo ([archived](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases)) | **hieplpvip**: originator of the underlying/ upstream [ZenBook repo](https://github.com/hieplpvip/Asus-Zenbook-Hackintosh) and [AsusSMC](https://github.com/hieplpvip/AsusSMC); contributor | **[fewtarius](https://github.com/fewtarius)**: facilitator | To [many](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/README.md#credits) *MANY* others .........

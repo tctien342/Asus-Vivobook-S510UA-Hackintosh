@@ -97,7 +97,7 @@ The support for DRM contents is limited due to incompatible firmware. Please see
     * in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance.
     * save
  
-     **Clover Configurator**: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number. Save.
+    **Clover Configurator**: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number. Save.
 
  Above steps are necessary to - amongst other things - hopefully be able to use iCloud.
 
@@ -106,7 +106,7 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 
 # Wi-Fi Replacement
 
-As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should remove *ALL* related kexts from inside your EFI folder (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`).
+As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should remove *ALL* related kexts from inside your EFI folder(s) (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`).
 
 Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one).
 
@@ -117,7 +117,8 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 
 
 # _ATTENTION - be careful with Updates_!
-**Be especially mindful with VirtualSMC Updates!** The VirtualSMC version should match those of accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) to avoid touchpad and battery issues! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
+1. **Clover only**: after updating `AirportBrcmFixup.kext` and/or `VoodooPS2Controller.kext` and (esp.) if you're running Big Sur, you ***have to*** (!!) run `/EFI/CLOVER/kexts/Other/remove problematic kexts after update` or Big Sur won't boot. See [here](https://github.com/CloverHackyColor/CloverBootloader/issues/350) for the sad and stubborn details...
+2. **VirtualSMC**: The VirtualSMC version should match those of accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) to avoid touchpad and battery issues! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
 
 _________________________
 ## Special Credits for this repo to these hackintoshers:

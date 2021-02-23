@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-kext_1=AirportBrcmFixup/AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcm4360_Injector.kext
+kext_1=AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcm4360_Injector.kext
 kext_2=VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext
 kext_3=VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext
 kext_4=VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext

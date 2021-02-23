@@ -58,12 +58,12 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
- * [Online Reference Manual](https://dortania.github.io/docs/latest/Configuration.html)
+ * [Online Reference Manual](https://dortania.github.io/docs/latest/Configuration.html) | [Dortania guides](https://dortania.github.io/getting-started/)
 
 
  ### Clover:
  * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
- *  [Online Documentation in Russian & English](https://dortania.github.io/docs/latest/Configuration.html)
+ *  [Online Documentation](https://drovosek01.github.io/CloverHackyColor-WebVersion/) (Russian & English)
 
 
 # Steps to install macOS
@@ -87,10 +87,20 @@ The support for DRM contents is limited due to incompatible firmware. Please see
     
 1. **Download this repo**, preferably as **.dmg package** from the [Releases](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) section because a) each release was tested thoroughly and can be considered a stable mile stone for most users, and b) macOS native icons and labels are maintained.<br/>  Alternatively you can download the repo at it's current "0-day" state if you see that's more recent than the latest release date and contains one or more updates you are looking for via the green "Clone or Download" button on the top right of the [repo's main page](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh), "Download ZIP". Consider the non-release state as BETA, and be aware that GitHub does ***not*** (yet?) sustain macOS native icons and labels in its open repo!
 
-2. Open the folder "**post macOS Installations**" and install *all* from within its subfolders for Audio Input, Hibernate prevention, additional function keys, etc. Also (strongly recommended!) study and consider the content of the folder [Optional].
-2. Recommended: **install all kexts** from EFI/CLOVER/kexts/Other (and any kext from the subfolder matching your macOS version) **to L/E (/Library/Extensions)** with Hackintool (icon 'Tools' in its window bar, first kext icon in the bottom bar, install kexts, final kext icon in the bottom bar 'Rebuild KextCache and repair Permissions'), reboot
-3. Now trackpad and audio input should work. Next you need to **fill the EFI partition on your internal hard disk with the Clover EFI folder**. You can use Clover Configurator to mount your System EFI. Next back up the existing System EFI folder and copy this release's EFI folder to your system EFI partition
-4. Run Clover Configurator, click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the 'Generate New' button. That will change both, system and board serial number, which should hopefully enable you to use iCloud
+2. Open the folder "**post macOS Installations**" and install *all* from within its subfolders for Hibernate prevention, additional function keys, etc. Also (strongly recommended!) study and consider the content of the folder [Optional]!
+
+3. **Fill your internal hard disk's EFI partition with the OC or Clover EFI folder**. You can use the matching Configurator to mount your system ESP (EFI System Partition). Next back up the existing System EFI folder and copy one of this release's EFI folders to your system's ESP.
+
+4. **OpenCore Configurator**:
+ - click onto **PlatformInfo** in the side bar on the left
+ - on the right top, click onto the 1st tab 'DataHub - Generic - PlatformNVRAM'. You will see four text fields with `update this field`.
+ - open a new empty instance of OC C leaving this instance opeb, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage`, choose `MacBookPro15,4`
+ - in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance.
+
+ **Clover Configurator**: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.
+
+Above steps are necessary to - amongst other things - hopefully be able to use iCloud.
+
 5. **Reboot and ENJOY :)**
 
 # _ATTENTION - be careful with Updates_!

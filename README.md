@@ -116,7 +116,6 @@ Reboot and **ENJOY even more** :)
 # _ATTENTION - be careful with Updates_!
 **Be especially mindful with VirtualSMC Updates!** The VirtualSMC version should match those of accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) to avoid touchpad and battery issues! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
 
---------------------------------
 _________________________
 ## Special Credits for this repo to these hackintoshers:
 **tctien342** (originator), **LeeBinder** (current repo maintainer), **whatnameisit** (main contributor), **hieplpvip** (contributor), **fewtarius** (facilitator), any to many *MANY* others..

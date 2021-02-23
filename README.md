@@ -124,14 +124,14 @@ If there is more than one boot-arg, make sure you separate them with a space fro
 As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should:
 
 - remove *ALL* related kexts from inside your EFI folder(s) (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`)
-- remove *ALL* related entries (brcmfx-country=#a bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) from your config.plist(s):
+- remove *ALL* related entries (brcmfx-country=US bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) from your config.plist(s):
 
  **OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args</br>
  **Clover:** Boot > Arguments (remove via the -)
 
 - save and reboot
 
-Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one). If you opt for one of these, you need to adapt the boot argument `brcmfx-country=#a` to match your country code. Example: `brcmfx-country=DE` for Germany, `US` for USA etc. You find it at the same spot(s) as described above.
+Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one). If you opt for one of these, you should adapt the boot argument `brcmfx-country=US` to match your country code. Example: `brcmfx-country=DE` for Germany, `VN` for Vietnam etc. You find it at the same spot(s) as described above.
 
 # Recommendations
 1. **OC (1st) + Clover (2nd)**: On your SSD's ESP, have OC's EFI folder so OC is your main bootloader; additionally create a separate FAT partition with at least 50+ MB, label it `Clover` and copy the Clover EFI folder onto it and onfigure it accdg. to above instructions. Make sure you use the same SMBIOS Platform Info in both config.plists so you don't experience oddities!

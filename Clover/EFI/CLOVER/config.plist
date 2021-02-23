@@ -454,7 +454,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Arguments</key>
-		<string>-v alcid=13 brcmfx-country=#a bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400</string>
+		<string>-v alcid=13 brcmfx-country=US bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400</string>
 		<key>#Arguments - 2</key>
 		<string></string>
 		<key>XMPDetection</key>

@@ -33,7 +33,7 @@ This repo is based on whatnameisit's brilliant and cutting-edge [repo for his Vi
 
 Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh). He also has been tending it very actively so it is more likely to be as up-to-date as possible! Note that **he does *not* offer a Clover EFI** and that **you *do* need to be able to handle OpenCore**! _In any case_ please do read through his [ReadME](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) because it contains a wealth of important info and links which also apply to this repo!
 
-Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other features. For a more detailed comparison, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
+Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one despite of still being beta by version number. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other sophisticated features. For a more detailed comparison, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
 
 # Unsupported Hardware & Features
 
@@ -126,7 +126,7 @@ As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 
 - remove *ALL* related entries (brcmfx-country=US bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) from your config.plist(s):
 
  **OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args</br>
- **Clover:** Boot > Arguments (remove via the -)
+ **Clover:** Boot > Arguments (remove via the `-`)
 
 - save and reboot
 

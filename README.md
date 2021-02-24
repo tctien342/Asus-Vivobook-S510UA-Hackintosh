@@ -89,10 +89,9 @@ If there is more than one boot-arg, make sure you separate them with a space fro
 1. Enter the BIOS and set the following options:
 
 	- Display memory: 64MB
-	- Disable VT-D
 	- Disable Fast Boot
 	- Disable Secure Boot
-	- recommended: set the EFI partition with Clover as the first boot loader
+	- recommended: set the EFI partition with OC as the first boot loader
 
 2. Prepare a macOS installer on a USB flash drive with OC or Clover added
 3. Replace the EFI folder in the USB EFI partition with the matching one (OC or Clover) from this repo

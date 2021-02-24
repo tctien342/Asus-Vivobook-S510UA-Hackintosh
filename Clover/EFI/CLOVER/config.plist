@@ -35,6 +35,8 @@
 				<string>#MCFG</string>
 			</dict>
 			<dict>
+				<key>DropForAllOS</key>
+				<true/>
 				<key>Signature</key>
 				<string>DMAR</string>
 			</dict>
@@ -44,13 +46,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 			</dict>
-		</array>
+</array>
 		<key>DisabledAML</key>
 		<array>
 			<string>SSDT.aml</string>
 			<string>SSDT-XCPM.aml</string>
 			<string>SSDT-PluginType1.aml</string>
-		</array>
+</array>
 		<key>Comment-DisabledAML</key>
 		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>FixHeaders</key>
@@ -61,27 +63,33 @@
 			<array>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>QVBYWA==</data>
+					<data>
+					QVBYWA==					</data>
 					<key>Comment</key>
 					<string>AICPUPM: Rename APSS to APXX</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>QVBTUw==</data>
+					<data>
+					QVBTUw==					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -89,27 +97,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WEFORQk=</data>
+					<data>
+					WEFORQk=					</data>
 					<key>Comment</key>
 					<string>ATK support: Rename M(IANE) to XANE</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>SUFORQk=</data>
+					<data>
+					SUFORQk=					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -117,27 +131,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WFEwQQ==</data>
+					<data>
+					WFEwQQ==					</data>
 					<key>Comment</key>
 					<string>ATK support: Rename M(_Q0A) to XQ0A F1</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>X1EwQQ==</data>
+					<data>
+					X1EwQQ==					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -145,27 +165,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WFEwQg==</data>
+					<data>
+					WFEwQg==					</data>
 					<key>Comment</key>
 					<string>ATK support: Rename M(_Q0B) to XQ0B F2</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>X1EwQg==</data>
+					<data>
+					X1EwQg==					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -173,27 +199,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WFEwRQ==</data>
+					<data>
+					WFEwRQ==					</data>
 					<key>Comment</key>
 					<string>ATK support: Rename M(_Q0E) to XQ0E F5</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>X1EwRQ==</data>
+					<data>
+					X1EwRQ==					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -201,27 +233,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WFEwRg==</data>
+					<data>
+					WFEwRg==					</data>
 					<key>Comment</key>
 					<string>ATK support: Rename M(_Q0F) to XQ0F F6</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>X1EwRg==</data>
+					<data>
+					X1EwRg==					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -229,27 +267,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WFExMQ==</data>
+					<data>
+					WFExMQ==					</data>
 					<key>Comment</key>
 					<string>ATK support: Rename M(_Q11) to XQ11 F8</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>X1ExMQ==</data>
+					<data>
+					X1ExMQ==					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -257,27 +301,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WEJJRgA=</data>
+					<data>
+					WEJJRgA=					</data>
 					<key>Comment</key>
 					<string>Battery fix: Rename M(BIFA) to XBIF</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>QklGQQA=</data>
+					<data>
+					QklGQQA=					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -285,27 +335,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WEJTVAQ=</data>
+					<data>
+					WEJTVAQ=					</data>
 					<key>Comment</key>
 					<string>Battery fix: Rename M(FBST) to XBST</string>
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Find</key>
-					<data>RkJTVAQ=</data>
+					<data>
+					RkJTVAQ=					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -313,27 +369,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WE1CUgs=</data>
+					<data>
+					WE1CUgs=					</data>
 					<key>Comment</key>
 					<string>Battery fix: Rename M(SMBR) to XSMR</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>U01CUgs=</data>
+					<data>
+					U01CUgs=					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -341,27 +403,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WE1CVw0=</data>
+					<data>
+					WE1CVw0=					</data>
 					<key>Comment</key>
 					<string>Battery fix: Rename M(SMBW) to XSMW</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>U01CVw0=</data>
+					<data>
+					U01CVw0=					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -369,27 +437,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WEJJWAA=</data>
+					<data>
+					WEJJWAA=					</data>
 					<key>Comment</key>
 					<string>Battery fix: Rename M(_BIX) to XBIX</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>X0JJWAA=</data>
+					<data>
+					X0JJWAA=					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -397,27 +471,33 @@
 				</dict>
 				<dict>
 					<key>Mask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Disabled</key>
 					<false/>
 					<key>OemTableId</key>
-					<data>AAAAAAAAAAA=</data>
+					<data>
+					AAAAAAAAAAA=					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+										</data>
 					<key>Replace</key>
-					<data>WFBSVwI=</data>
+					<data>
+					WFBSVwI=					</data>
 					<key>Comment</key>
 					<string>Sleep fix: Rename M(GPRW) to XPRW</string>
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>R1BSVwI=</data>
+					<data>
+					R1BSVwI=					</data>
 					<key>TableSignature</key>
-					<data>AAA=</data>
+					<data>
+					AAA=					</data>
 					<key>Enabled</key>
 					<true/>
 					<key>Limit</key>
@@ -425,15 +505,17 @@
 				</dict>
 				<dict>
 					<key>Find</key>
-					<data>UkFMUwA=</data>
+					<data>
+					UkFMUwA=					</data>
 					<key>Replace</key>
-					<data>WEFMUwA=</data>
+					<data>
+					WEFMUwA=					</data>
 					<key>Disabled</key>
 					<false/>
 					<key>Comment</key>
 					<string>ALS: change Method(RALS,0,S) XALS</string>
 				</dict>
-			</array>
+</array>
 			<key>Fixes</key>
 			<dict>
 				<key>FixTMR</key>
@@ -478,7 +560,7 @@
 		<key>Hide</key>
 		<array>
 			<string>Recovery</string>
-		</array>
+</array>
 		<key>Scan</key>
 		<dict>
 			<key>Tool</key>
@@ -515,7 +597,8 @@
 				<key>name</key>
 				<string>audio</string>
 				<key>layout-id</key>
-				<data>AwAAAA==</data>
+				<data>
+				AwAAAA==				</data>
 				<key>model</key>
 				<string>Conexant CX8050 High-Definition Audio</string>
 				<key>hda-gfx</key>
@@ -530,35 +613,45 @@
 				<key>name</key>
 				<string>display</string>
 				<key>framebuffer-con1-busid</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==				</data>
 				<key># LVDS, Dummy, HDMI, Dummy</key>
 				<string>LVDS@0 and HDMI@2</string>
 				<key>device-id</key>
-				<data>FlkAAA==</data>
+				<data>
+				FlkAAA==				</data>
 				<key>framebuffer-con1-pipe</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==				</data>
 				<key>device_type</key>
 				<string>Display Controller</string>
 				<key>framebuffer-con1-index</key>
-				<data>/////w==</data>
+				<data>
+				/////w==				</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
+				<data>
+				AQAAAA==				</data>
 				<key>framebuffer-con1-type</key>
-				<data>AQAAAA==</data>
+				<data>
+				AQAAAA==				</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAWWQ==</data>
+				<data>
+				AAAWWQ==				</data>
 				<key>framebuffer-con1-flags</key>
-				<data>IAAAAA==</data>
+				<data>
+				IAAAAA==				</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 620</string>
 				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
+				<data>
+				AQAAAA==				</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
+				<data>
+				AAAAgA==				</data>
 			</dict>
 		</dict>
 		<key>Audio</key>
@@ -607,11 +700,13 @@
 		<array>
 			<dict>
 				<key>Find</key>
-				<data>SU9LaXQ=</data>
+				<data>
+				SU9LaXQ=				</data>
 				<key>Name</key>
 				<string>AppleIntelLpssI2CController</string>
 				<key>Replace</key>
-				<data>SU9LaXM=</data>
+				<data>
+				SU9LaXM=				</data>
 				<key>Disabled</key>
 				<true/>
 				<key>Comment</key>
@@ -621,11 +716,13 @@
 			</dict>
 			<dict>
 				<key>Find</key>
-				<data>SU9LaXQ=</data>
+				<data>
+				SU9LaXQ=				</data>
 				<key>Name</key>
 				<string>AppleIntelLpssI2C</string>
 				<key>Replace</key>
-				<data>SU9LaXM=</data>
+				<data>
+				SU9LaXM=				</data>
 				<key>Disabled</key>
 				<true/>
 				<key>Comment</key>
@@ -635,11 +732,13 @@
 			</dict>
 			<dict>
 				<key>Find</key>
-				<data>AEFQUExFIFNTRAA=</data>
+				<data>
+				AEFQUExFIFNTRAA=				</data>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
-				<data>AAAAAAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAAAAAA=				</data>
 				<key>Disabled</key>
 				<true/>
 				<key>Comment</key>
@@ -647,16 +746,18 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 			</dict>
-		</array>
+</array>
 		<key>PanicNoKextDump</key>
 		<true/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
 				<key>Find</key>
-				<data>ILniAAAADzA=</data>
+				<data>
+				ILniAAAADzA=				</data>
 				<key>Replace</key>
-				<data>ILniAAAAkJA=</data>
+				<data>
+				ILniAAAAkJA=				</data>
 				<key>Disabled</key>
 				<false/>
 				<key>Comment</key>
@@ -664,9 +765,11 @@
 			</dict>
 			<dict>
 				<key>Find</key>
-				<data>igKEwHRC</data>
+				<data>
+				igKEwHRC				</data>
 				<key>Replace</key>
-				<data>igKEwOtC</data>
+				<data>
+				igKEwOtC				</data>
 				<key>Disabled</key>
 				<true/>
 				<key>Comment</key>
@@ -674,13 +777,13 @@
 				<key>MatchOS</key>
 				<string>10.14.x</string>
 			</dict>
-		</array>
+</array>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-		</array>
+</array>
 		<key>KernelLapic</key>
 		<false/>
 	</dict>
@@ -769,6 +872,6 @@
 		<true/>
 	</dict>
 	<key>Comment</key>
-	<string>This config is created by @hieplpvip for S510 (KabyLake-R), modified for my own use (X510UA-BQ490) @whatnameisit</string>
+	<string>This config was created by @hieplpvip for S510 (KabyLake-R), modified for my VivoBook BQ514T (90NB0FQ1-M08550) @Lee Binder/ BuxB</string>
 </dict>
 </plist>

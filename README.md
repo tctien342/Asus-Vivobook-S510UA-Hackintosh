@@ -107,9 +107,9 @@ If there is more than one boot-arg, make sure you separate them with a space fro
 4. **OpenCore Configurator**:
     * click onto **PlatformInfo** in the side bar on the left
     * on the right top, click onto the 1st tab 'DataHub - Generic - PlatformNVRAM'. You will see four text fields with `update this field`
-    * *If you are a new user w/o a previous Clover config.plist*: open a new empty instance of OC C leaving this instance open, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage`, choose `MacBookPro15,4`
-    * in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance.
-    * *existing user*: if you have already been booting via Clover config.plist: copy the matching values over according to [these conversion translations](https://dortania.github.io/OpenCore-Install-Guide/clover-conversion/Clover-config.html#smbios).
+    * *If you are a new user w/o a previous Clover config.plist*: while leaving the current instance open in the background, open a new empty instance of OC, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage` and choose `MacBookPro15,4`
+    * in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance
+    * *existing user*: if you have already been booting via Clover config.plist: copy the matching values over according to [these conversion translations](https://dortania.github.io/OpenCore-Install-Guide/clover-conversion/Clover-config.html#smbios)
     * save
  
     **Clover Configurator**:

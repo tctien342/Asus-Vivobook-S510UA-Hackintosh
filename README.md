@@ -112,12 +112,13 @@ If there is more than one boot-arg, make sure you separate them with a space fro
     * *existing user*: if you have already been booting via Clover config.plist: copy the matching values over according to [these conversion translations](https://dortania.github.io/OpenCore-Install-Guide/clover-conversion/Clover-config.html#smbios).
     * save
  
-    **Clover Configurator**:<br>
-    * *new user*: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.<br>
-    * *existing user*: use (recommended) PrefEdit to first remove the dummy SMBIOS section and replace it with your existing one<br>
+    **Clover Configurator**:
+    
+    * *new user*: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.
+    * *existing user*: use (recommended) [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) to first remove the dummy SMBIOS section and replace it with your existing one
     * Save.
 
- Above steps are necessary to - amongst other things - hopefully be able to use iCloud.
+ Above steps are necessary to - amongst other things - hopefully enable the use of iCloud.
 
 5. **Reboot and ENJOY :)**
 
@@ -141,7 +142,7 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 2. **Downscale monitor resolution to 1600 x 900** for two reasons: **a)** you will need to squint much less or ideally not at all because human eyes are simply not made for a 1920 x 1080 resolution on a 15,6" screen, period; and b) your monitor will use less energy = longer battery life!
 3. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
 
-# Trouble-shooting
+# Troubleshooting
 **Many issues can be solved by performing a NVRAM Reset**, in OC via the last entry in the boot menu picker, and in Clover Boot menu by pressing F11! Note that this will also clear custom boot entries in your UEFI BIOS boot menu.
 
 - [[SOLVED] Sporadic black screen on wake from sleep](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/41)

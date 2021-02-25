@@ -44,7 +44,7 @@ Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acida
     • Intel Wi-Fi - replacement see below
 The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
 
-# VivoBooks with an additional dGPU (NVIDIA GeForce 940MX etc.)
+# VivoBooks with an additional dGPU (NVIDIA GeForce 940MX, MX150 etc.)
 
 **OpenCore** via OpenCore Configurator:
 
@@ -107,11 +107,15 @@ If there is more than one boot-arg, make sure you separate them with a space fro
 4. **OpenCore Configurator**:
     * click onto **PlatformInfo** in the side bar on the left
     * on the right top, click onto the 1st tab 'DataHub - Generic - PlatformNVRAM'. You will see four text fields with `update this field`
-    * open a new empty instance of OC C leaving this instance open, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage`, choose `MacBookPro15,4`
+    * *If you are a new user w/o a previous Clover config.plist*: open a new empty instance of OC C leaving this instance open, navigate to the same tab, click onto the up/down arrow box next to `Check Coverage`, choose `MacBookPro15,4`
     * in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance.
+    * *existing user*: if you have already been booting via Clover config.plist: copy the matching values over according to [these conversion translations](https://dortania.github.io/OpenCore-Install-Guide/clover-conversion/Clover-config.html#smbios).
     * save
  
-    **Clover Configurator**: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number. Save.
+    **Clover Configurator**:<br>
+       * *new user*: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.<br>
+    * *existing user*: use (recommended) PrefEdit to first remove the dummy SMBIOS section and replace it with your existing one<br>
+    * Save.
 
  Above steps are necessary to - amongst other things - hopefully be able to use iCloud.
 
@@ -136,6 +140,13 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 1. **OC (1st) + Clover (2nd)**: On your SSD's ESP, have OC's EFI folder so OC is your main bootloader; additionally create a separate FAT partition with at least 50+ MB, label it `Clover` and copy the Clover EFI folder onto it and onfigure it accdg. to above instructions. Make sure you use the same SMBIOS Platform Info in both config.plists so you don't experience oddities!
 2. **Downscale monitor resolution to 1600 x 900** for two reasons: **a)** you will need to squint much less or ideally not at all because human eyes are simply not made for a 1920 x 1080 resolution on a 15,6" screen, period; and b) your monitor will use less energy = longer battery life!
 3. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
+
+# Trouble-shooting
+**Many issues can be solved by performing a NVRAM Reset**, in OC via the last entry in the boot menu picker, and in Clover Boot menu by pressing F11! Note that this will also clear custom boot entries in your UEFI BIOS boot menu.
+
+- [[SOLVED] Sporadic black screen on wake from sleep](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/41)
+- [[SOLVED] VivoBook doesn't go to sleep properly on low battery but rather crashes](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/39)
+- [[SOLVED] VivoBook won't wake from sleep](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/54#issuecomment-612618529)
 
 
 # _ATTENTION - be careful with Updates_!

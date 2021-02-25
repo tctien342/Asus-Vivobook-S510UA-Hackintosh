@@ -6,8 +6,8 @@
 
 # Details
 
-    Version:    	11.0 RC (Release Candidate) 1
-    Date:       	Feb. 23, 2021
+    Version:    	11.0 RC (Release Candidate) 2
+    Date:       	Feb. 25, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  

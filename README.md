@@ -58,7 +58,7 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 - via Clover Configurator: Boot > Arguments: add `-wegnoegpu`
 - save & reboot
 
-If there is more than one boot-arg, make sure you separate them with a space from each other!
+If there is more than one boot-arg, make sure you separate them from each other with a space!
 
 # Known Issues, weaknesses and oddities
 

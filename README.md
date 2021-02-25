@@ -130,8 +130,8 @@ As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 
 - remove *ALL* related kexts from inside your EFI folder(s) (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`)
 - remove *ALL* related entries (brcmfx-country=US bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) from your config.plist(s):
 
- **OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args</br>
- **Clover:** Boot > Arguments (remove via the `-`)
+  **OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args</br>
+   **Clover:** Boot > Arguments (remove via the `-`)
 
 - save and reboot
 

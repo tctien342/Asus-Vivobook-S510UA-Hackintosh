@@ -113,7 +113,7 @@ If there is more than one boot-arg, make sure you separate them with a space fro
     * save
  
     **Clover Configurator**:<br>
-       * *new user*: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.<br>
+    * *new user*: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.<br>
     * *existing user*: use (recommended) PrefEdit to first remove the dummy SMBIOS section and replace it with your existing one<br>
     * Save.
 

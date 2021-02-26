@@ -36,9 +36,9 @@
 			</dict>
 			<dict>
 				<key>DropForAllOS</key>
-				<true/>
+				<false/>
 				<key>Signature</key>
-				<string>DMAR</string>
+				<string>#DMAR</string>
 			</dict>
 			<dict>
 				<key>TableId</key>

@@ -35,7 +35,7 @@ Users with VivoBooks *without* keyboard backlight are advised to rather use [wha
 
 Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one despite of still being beta by version number. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other sophisticated features. For a more detailed comparison, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
 
-<img src="https://raw.githubusercontent.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/master/OpenCore/Screenshot%20OC%20GUI.jpg" width="45%" height="" /> <img src="https://raw.githubusercontent.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/master/Clover/Screenshot%20Clover%20GUI.jpg" width="45%" height="" />
+<img src="https://raw.githubusercontent.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/master/OpenCore/Screenshot%20OC%20GUI.jpg" width="48%" height="" /> &nbsp; <img src="https://raw.githubusercontent.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/master/Clover/Screenshot%20Clover%20GUI.jpg" width="48%" height="" />
 
 # Unsupported Hardware & Features
 

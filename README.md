@@ -15,8 +15,8 @@
 
 # System specification
 
-    • Model Name:		Asus VivoBook S510UA
-    • CPU:			Intel Core i5-8250U (8th Gen. i5, Kaby Lake R)
+    • Model Name:		Asus VivoBook S510UA BQ514T
+    • CPU:			Intel Core i5-8250U Kaby Lake R 8th Gen. i5
     • Video Graphics:	Intel UHD 620
     • Wi-Fi & Bluetooth:	Intel Dual Band Wireless-AC 8265  // replacements see below
     • Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)

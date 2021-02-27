@@ -745,24 +745,39 @@
 	</dict>
 	<key>Quirks</key>
 	<dict>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>EnableWriteUnprotector</key>
+		<true/>
 		<key>SetupVirtualMap</key>
 		<true/>
 		<key>DisableIoMapper</key>
 		<true/>
+		<key>DisableLinkeditJettison</key>
+		<true/>
+		<key>ProvideMaxSlide</key>
+		<integer>0</integer>
+
 		<key>PanicNoKextDump</key>
 		<true/>
 		<key>RequestBootVarRouting</key>
 		<true/>
 		<key>SyncRuntimePermissions</key>
-		<false/>
-		<key>AvoidRuntimeDefrag</key>
+		<false/>				
+		<key>Comment</key>
+	<string>Below Quirks are taken from VivoBook OC config.plist, are not (yet?) present in Clover or named differently and might or might not be included at some point; they can be considered placeholders or reminders until they are either relevant or removed</string>
+		<key>AppleCpuPmCfgLock</key>
 		<true/>
-		<key>DisableLinkeditJettison</key>
+		<key>AppleXcpmCfgLock</key>
 		<true/>
-		<key>EnableWriteUnprotector</key>
-		<true/>
+		<key>SetApfsTrimTimeout</key>
+		<integer>-1</integer>
+		<key>ExitBootServicesDelay</key>
+		<integer>0</integer>
+		<key>TscSyncTimeout</key>
+		<integer>0</integer>
 	</dict>
 	<key>Comment</key>
-	<string>This config was created by @hieplpvip for S510 (KabyLake-R), modified for my VivoBook BQ514T (90NB0FQ1-M08550) @Lee Binder/ BuxB</string>
+	<string>This config was created by @hieplpvip for S510 (Kaby Lake R), modified for my VivoBook BQ514T (90NB0FQ1-M08550) @Lee Binder/ BuxB</string>
 </dict>
 </plist>

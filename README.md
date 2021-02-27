@@ -35,6 +35,8 @@ Users with VivoBooks *without* keyboard backlight are advised to rather use [wha
 
 Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one despite of still being beta by version number. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other sophisticated features. For a more detailed comparison, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
 
+<img src="https://raw.githubusercontent.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/master/OpenCore/Screenshot%20OC%20GUI.jpg" width="50%" height="" /> <img src="https://raw.githubusercontent.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/master/Clover/Screenshot%20Clover%20GUI.jpg" width="50%" height="" />
+
 # Unsupported Hardware & Features
 
     • dGPU like NVIDIA GeForce 940MX
@@ -137,10 +139,21 @@ As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 
 
 Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one). If you opt for one of these, you should adapt the boot argument `brcmfx-country=US` to match your country code. Example: `brcmfx-country=DE` for Germany, `VN` for Vietnam etc. You find it at the same spot(s) as described above.
 
+# _ATTENTION - be careful with Updates_!
+1. **Clover only**: after updating `AirportBrcmFixup.kext` and/or `VoodooPS2Controller.kext` and (esp.) if you're running Big Sur, you ***have to*** (!!) run `/EFI/CLOVER/kexts/Other/remove problematic kexts after update` or Big Sur won't boot. See [here](https://github.com/CloverHackyColor/CloverBootloader/issues/350) for the sad and stubborn details...
+2. **VirtualSMC**: The VirtualSMC version should match those of accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) to avoid touchpad and battery issues! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
+
 # Recommendations
 1. **OC (1st) + Clover (2nd)**: On your SSD's ESP, have OC's EFI folder so OC is your main bootloader; additionally create a separate FAT partition with at least 50+ MB, label it `Clover` and copy the Clover EFI folder onto it and onfigure it accdg. to above instructions. Make sure you use the same SMBIOS Platform Info in both config.plists so you don't experience oddities!
 2. **Downscale monitor resolution to 1600 x 900** for two reasons: **a)** you will need to squint much less or ideally not at all because human eyes are simply not made for a 1920 x 1080 resolution on a 15,6" screen, period; and b) your monitor will use less energy = longer battery life!
 3. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
+
+# Fine-tuning
+- **Clover**: [how to create a GUI custom entry for Big Sur](https://github.com/CloverHackyColor/CloverBootloader/issues/300#issuecomment-768300847) rather than 'Boot Big Sur from PreBoot'
+- When all is working fine for you and you prefer not to look at all the lines flashing by during boot, **remove the `-v` verbose mode** switch:<br>
+**OC**: NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args<br>
+**Clover**: Boot > Arguments
+- Want to edit your VivoBook's U**EFI BIOS boot menu**? The simplest and quickest tool I found is the Windows freeware [BootIce](https://www.softpedia.com/get/System/Boot-Manager-Disk/Bootice.shtml), regardless of its age: [UEFI > Edit boot entries](https://www.google.com/search?q=BootIce+UEFI+Edit+boot+entries&tbm=isch&ved=2ahUKEwjPjeOrmovvAhUYG-wKHamZDVoQ2-cCegQIABAA&oq=BootIce+UEFI+Edit+boot+entries&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQGDoECAAQHlCXlANYmpUEYK63BGgDcAB4AIABX4gBxg-SAQIyN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=AdQ6YI-JMpi2sAeps7bQBQ&bih=908&biw=1680)
 
 # Troubleshooting
 **Many issues can be solved by performing a NVRAM Reset**, in OC via the last entry in the boot menu picker, and in Clover Boot menu by pressing F11! Note that this will also clear custom boot entries in your UEFI BIOS boot menu.
@@ -149,11 +162,6 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 - [[SOLVED] VivoBook doesn't go to sleep properly on low battery but rather crashes](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/39)
 - [[SOLVED] VivoBook won't wake from sleep](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/54#issuecomment-612618529)
 - [[SOLVED] i5-8250U 1.60GHz CPU in 'About this Mac' & Sys Profiler displayed as i7 1.8GHz](https://github.com/acidanthera/bugtracker/issues/1515)
-
-
-# _ATTENTION - be careful with Updates_!
-1. **Clover only**: after updating `AirportBrcmFixup.kext` and/or `VoodooPS2Controller.kext` and (esp.) if you're running Big Sur, you ***have to*** (!!) run `/EFI/CLOVER/kexts/Other/remove problematic kexts after update` or Big Sur won't boot. See [here](https://github.com/CloverHackyColor/CloverBootloader/issues/350) for the sad and stubborn details...
-2. **VirtualSMC**: The VirtualSMC version should match those of accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) to avoid touchpad and battery issues! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
 
 _________________________
 ## Special Credits for this repo to these fellow hackintoshers:

@@ -6,21 +6,16 @@ Below instructions apply to the **DW1560** and the **FRU 04X6020**. For the leas
 
 
 ### Mojave, High Sierra:  
-- **E/C/k/O**: AirportBrcmFixup.kext  
-- **L/E**: BrcmFirmwareRepo.kext, BrcmPatchRAM**2**.kext  
+- AirportBrcmFixup.kext, BrcmFirmwareData.kext, BrcmPatchRAM**2**.kext
 
-### Catalina:
-- **E/C/k/O**: AirportBrcmFixup.kext  
-- **L/E**: BrcmFirmwareRepo.kext, BrcmPatchRAM**3**.kext, **BrcmBluetoothInjector.kext**  
+### Catalina, Big Sur:
+- AirportBrcmFixup.kext, BrcmFirmwareData.kext, **BrcmBluetoothInjector.kext**, BrcmPatchRAM**3**.kext, 
 
 ### Notes:
 
-1. Recommended: set your country code in EFI/CLOVER/config.plist (and any other config you might use): `Boot/Arguments/brcmfx-country=` to your country. Example: `DE` for Germany
+1. Recommended: set your country code in config.plist (and any other config you might use): `Boot/Arguments/brcmfx-country=` to your country. Example: `DE` for Germany
 
-2. As per recommendations, any kext incl. **AirportBrcmFixup**.kext also works as supposed if installed to L/E.
-
-
-3. Neither the **DW1560** nor the F**RU 04X6020** need:
+2. Neither the **DW1560** nor the F**RU 04X6020** need:
 
 - BT4LEContinuityFixup.kext
 - FakePCIID.kext
@@ -36,9 +31,8 @@ ________________
 
 - **BrcmPatchRAM.kext**: 10.10 or earlier
 - **BrcmPatchRAM2.kext**: 10.11 - 10.14
-- **BrcmPatchRAM3.kext**: 10.15
-- **BrcmFirmwareRepo.kext**: 10.15 or earlier. **ATTENTION**:     
-	* ***must*** be installed to L/E because it cannot be injected by a bootloader!
+- **BrcmPatchRAM3.kext**: 10.15+
+
 	* if this kext is used, any accompanying kext()s (one of the BrcmPatchRAM; BrcmBluetoothInjector) ***must*** be installed to L/E, too, for optial reliability!
 - **BrcmBluetoothInjector.kext**: 10.11 or later. Do NOT use BrcmPatchRAM or BrcmPatchRAM2 with this kext - they MUST be removed!
 
@@ -56,4 +50,4 @@ Consequently, to have the native BT driver load for the device (BroadcomBluetoot
 
 #### Instructions for macOS Mojave and High Sierra:
 
-If you use BrcmFirmwareRepo AND BrcmPatchRAM2, you ***must*** remove BrcmBluetoothInjector.kext because it conflicts with BrcmPatchRAM2. Make sure it is ***not*** present in either L/E or in E/C/k/O!
+If you use BrcmFirmwareRepo AND BrcmPatchRAM2, you ***must*** remove BrcmBluetoothInjector.kext because it conflicts with BrcmPatchRAM2. Make sure it is ***not*** present in either L/E or in your EFI kext folder!

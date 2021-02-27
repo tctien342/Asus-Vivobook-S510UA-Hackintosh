@@ -6,8 +6,8 @@
 
 # Details
 
-    Version:    	11.0 RC (Release Candidate) 2
-    Date:       	Feb. 25, 2021
+    Version:    	11.0 RC (Release Candidate) 3
+    Date:       	Feb. 27, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
@@ -16,7 +16,7 @@
 # System specification
 
     • Model Name:		Asus VivoBook S510UA
-    • CPU:			Intel Core i5-8250U
+    • CPU:			Intel Core i5-8250U (8th Gen. i5, Kaby Lake R)
     • Video Graphics:	Intel UHD 620
     • Wi-Fi & Bluetooth:	Intel Dual Band Wireless-AC 8265  // replacements see below
     • Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)

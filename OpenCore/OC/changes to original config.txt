@@ -11,6 +11,8 @@ Kernel:
 	
 Misc:
 	- Boot > LauncherOption: disabled
-	- Debug > Target: 67
 	- Security > Expose Sensitive Data: 3
+	
+UEFI
+	- Drivers: enabled AudioDxe.efi, added CrScreenshotDxe.efi
 

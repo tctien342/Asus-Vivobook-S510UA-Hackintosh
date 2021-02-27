@@ -1432,7 +1432,8 @@
 			<string>ExFatDxe.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>OpenCanopy.efi</string>
-			<string>#AudioDxe.efi</string>
+			<string>AudioDxe.efi</string>
+			<string>CrScreenshotDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>

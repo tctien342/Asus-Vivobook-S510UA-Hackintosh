@@ -163,7 +163,7 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 - [[SOLVED] VivoBook won't wake from sleep](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/54#issuecomment-612618529)
 - [[SOLVED] i5-8250U 1.60GHz CPU in 'About this Mac' & Sys Profiler displayed as i7 1.8GHz](https://github.com/acidanthera/bugtracker/issues/1515)
 
-If your issue is not listed or persists, either post to the [VivoBook S15 X510UAR thread @tonymacx86](https://www.tonymacx86.com/threads/245445/), or open an [issue here](../issues).
+If your issue is not listed or persists, either post to the [VivoBook S15 X510UAR thread @tonymacx86](https://www.tonymacx86.com/threads/245445/), or open an [issue here](../../issues).
 
 _________________________
 ## Special Credits for this repo to these fellow hackintoshers:

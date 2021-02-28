@@ -1,5 +1,14 @@
-### 2020-04-10:
+## Release v.11.0, Feb. 28 2021
 
+- added Big Sur compatible OpenCore EFI (credits to whannameisit)
+- added Big Sur compatible Clover EFI based on whannameisit's OC EFI
+- updated all kexts and drivers
+- overall overhaul, improvements and refinements to the entire repo
+- moved repo over from tctien342 to my github corner
+
+____________________
+
+### 2020-04-10:
 - assigned real country code (US) across all config plist files to Boot/Arguments/brcmfx-country so Wi-Fi networks get detected even w/o any edit (user is still encouraged to set desired country code)
 
 

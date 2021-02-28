@@ -3,6 +3,7 @@
 - added Big Sur compatible OpenCore EFI (credits to whannameisit)
 - added Big Sur compatible Clover EFI based on whannameisit's OC EFI
 - updated all kexts and drivers
+- added cool cosmic theme for OC and Clover boot GUI
 - overall overhaul, improvements and refinements to the entire repo
 - moved repo over from tctien342 to my github corner
 

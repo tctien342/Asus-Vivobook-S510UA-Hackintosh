@@ -1,3 +1,8 @@
+File system:
+	added OC Resources folder; reduced it; added font framd by blackOSX for better readability
+
+config.plist:
+
 ACPI:
 	- add SSDT-ATKD-BKL.aml Keyboard backlight
 	- replace SSDT-PS2.aml with SSDT-Swap-CommandOption.aml

@@ -26,7 +26,7 @@
     • Keyboard Backlight:	Yes
     • BIOS Version:		x510UAR 310
 
-This repo is the continuation of [tctien342's repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been archived because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-family: Courier; font-size:30px; font-style:bold">T</font>his repo is the continuation of [tctien342's repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been archived because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
 
 1. re-added keyboard backlight support
 2. re-added a Clover EFI as *secondary* bootloader alternative by backporting OC's ACPI into Clover config.
@@ -162,6 +162,8 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 - [[SOLVED] VivoBook doesn't go to sleep properly on low battery but rather crashes](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/39)
 - [[SOLVED] VivoBook won't wake from sleep](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/54#issuecomment-612618529)
 - [[SOLVED] i5-8250U 1.60GHz CPU in 'About this Mac' & Sys Profiler displayed as i7 1.8GHz](https://github.com/acidanthera/bugtracker/issues/1515)
+
+If your issue is not listed or persists, either post to the [VivoBook S15 X510UAR thread @tonymacx86](https://www.tonymacx86.com/threads/245445/), or open an [issue here](../issues).
 
 _________________________
 ## Special Credits for this repo to these fellow hackintoshers:

@@ -26,7 +26,7 @@
     • Keyboard Backlight:	Yes
     • BIOS Version:		x510UAR 310
 
-This repo is the continuation of [tctien342's repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh) which has been archived because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
+This repo is the continuation of [tctien342's repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been archived because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
 
 1. re-added keyboard backlight support
 2. re-added a Clover EFI as *secondary* bootloader alternative by backporting OC's ACPI into Clover config.

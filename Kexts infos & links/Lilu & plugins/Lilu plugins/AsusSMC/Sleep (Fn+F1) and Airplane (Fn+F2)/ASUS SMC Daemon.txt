@@ -1,1 +1,0 @@
-The ASUS SMC Daemon enables Sleep (Fn+F1) and Airplane mode (Fn+F2) via functions keys.
